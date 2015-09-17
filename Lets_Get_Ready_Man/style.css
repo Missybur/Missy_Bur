@@ -5,6 +5,7 @@
           width: 100%;
           text-align: center;
           font-size: 25px;
+          font: Sigmar+One;
           font-family: 'Sigmar One', cursive;
         }
 
@@ -29,33 +30,10 @@
         }
 
         .chores_images {
-          margin: 10px;
+          margin: 20px;
           width: 150px;
           height: 150px;
           border: 4px solid #FF3B77;
-        }
-
-        #get_dressed_image{
-        }
-
-        #clean_up_toys_image {
-
-        }
-
-        #brush_teeth_image {
-
-        }
-
-        #say_prayers_image {
-
-        }
-
-        #put_clothes_in_hamper_image {
-
-        }
-
-        #read_image{
-
         }
 
         .floating-grid {
@@ -74,7 +52,7 @@
           width: 150px;
           height: 150px;
           background-color: #fff;
-          margin: 10px;
+          margin: 20px;
           text-align: middle;
           padding-top: 50px;
         }
@@ -164,7 +142,8 @@
           cursor: pointer;
           border-radius: 5px;
           border: solid 3px #ED4599;
-          font: Sunshiney;
+          font-family: 'Sigmar One', cursive;
+
 
         }
 
@@ -242,7 +221,6 @@
           border: solid 2px #FBAC18;
           font-size: 20px;
           text-align: center;
-
         }
 
         #small_answer_box_6 {
@@ -251,7 +229,6 @@
           border: solid 2px #ED4599;
           font-size: 20px;
           text-align: center;
-
         }
 
         .click_here_container {
@@ -273,8 +250,58 @@
           border: solid 3px #ED4599;
           font: Sunshiney;
           list-style-type: none;
+        }
 
-}
+        .click_here_1_container{
+          background-color: #FF3B77;
+          font-size: 15px;
+          font-family: Sunshiney;
+          padding: 0px;
+       /*   margin-left: auto;
+          margin-right: auto;*/
+          /*margin: 0 30 30 0px;*/
+
+        }
+
+        .floating-box-click-here{
+          display: inline-block;
+          border: 4px solid #FBAC18;
+          width: 60px;
+          height: 60px;
+          background-color: #FF3B77;
+          margin: 71px;
+          text-align: middle;
+          font-family: 'Sigmar One', cursive, #FBAC18;
+          font-size: 14px;
+          color: #FBAC18;
+          padding: 0px;
+        }
+
+        .click_here_1 {
+          width: 40px;
+          height: 40px;
+        }
+
+         .click_here_2 {
+          width: 40px;
+          height: 40px;
+        }
+         .click_here_3 {
+          width: 40px;
+          height: 40px;
+        }
+         .click_here_4 {
+          width: 40px;
+          height: 40px;
+        }
+         .click_here_5 {
+          width: 40px;
+          height: 40px;
+        }
+         .click_here_6 {
+          width: 40px;
+          height: 40px;
+        }
 
         .directions li {
             color: #FED864;
