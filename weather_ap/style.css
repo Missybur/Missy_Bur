@@ -1,0 +1,122 @@
+#button {
+  margin: 3px;
+  padding: 1px;
+  font-family: 'Bree Serif', serif;
+}
+
+body {
+  background-color: #FFF232;
+  font-family: 'Bree Serif', serif;
+
+}
+
+h1 {
+  color: #28A3CC;
+  font-family: 'Bree Serif', serif;
+ /* top: 50%;
+  left: 50%;*/
+}
+
+h2 {
+  /*float: left;*/
+  color: #B22348;
+  font-family: 'Bree Serif', serif;
+}
+
+h3 {
+  color: #28A3CC;
+  font-family: 'Bree Serif', serif;
+  /*float: left;*/
+}
+
+#inputCurrentForecast {
+  background-color: #FF1954;
+  border: 4px solid #28A3CC;
+ /* padding-bottom: 2px;
+  padding-top: 2px;*/
+  font-family: 'Bree Serif', serif;
+  width: 300px;
+  height: 40px;
+
+}
+
+#inputZipcode {
+  background-color: #FF1954;
+  border: 4px solid #28A3CC;
+ /* padding-bottom: 2px;
+  padding-top: 2px;*/
+  font-family: 'Bree Serif', serif;
+  width: 300px;
+  height: 40px;
+}
+
+#go {
+  position: right;
+  border: solid 4px #FF1954;
+  /*position: absolute;*/
+/*  padding-top: 2px;
+  padding-bottom: 2px;*/
+  background-color: #28A3CC;
+  /*border: 4px solid #FF1954;*/
+  /*float: right;*/
+  font-family: 'Bree Serif', serif;
+  color: #FFF232;
+  /*right: 50%;*/
+  width: 300px;
+  height: 40px;
+
+}
+
+#webcam {
+  position: right;
+  border: solid 4px #FF1954;
+  /*position: absolute;*/
+/*  padding-top: 2px;
+  padding-bottom: 2px;*/
+  background-color: #28A3CC;
+  /*border: 4px solid #FF1954;*/
+  /*float: right;*/
+  font-family: 'Bree Serif', serif;
+  color: #FFF232;
+  /*right: 50%;*/
+  width: 300px;
+  height: 40px;
+}
+
+#threeDayHiForecast {
+  position: right;
+  /*position: absolute;*/
+  background-color: #28A3CC;
+  /*border: 3px solid #FF1954;*/
+  /*float: right;*/
+  font-family: 'Bree Serif', serif;
+  color: #FFF232;
+  right: 50%;
+  border: solid 3px #FF1954;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 300px;
+  height: 40px;
+}
+#threeDayLowForecast {
+  position: right;
+  /*position: absolute;*/
+  background-color: #28A3CC;
+  /*border: 3px solid #FF1954;*/
+  /*float: right;*/
+  font-family: 'Bree Serif', serif;
+  color: #FFF232;
+  right: 50%;
+  border: solid 3px #FF1954;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 300px;
+  height: 40px;
+}
+
+
+#mainImage {
+  float: right;
+  right: 5px;
+  border: solid 5px #FF1954;
+}
