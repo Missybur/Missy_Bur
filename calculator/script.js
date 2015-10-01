@@ -41,7 +41,7 @@ $(document).ready(function(){
        else if(operator === "-") {
            result = newnumber - number;
        }
-       else if(operator === "*") {
+       else if(operator === "x") {
            result = newnumber * number;
        }
        else if(operator === "/") {
