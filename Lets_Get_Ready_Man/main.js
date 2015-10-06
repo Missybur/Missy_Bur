@@ -22,6 +22,7 @@ var currTextField = $(".inputTextBrush");
 
 // // Box 1: Evaluating answer
 
+
   $(".click_here_1").on("click", function(){
    if ($("#small_answer_box_1").val().toUpperCase() === $("#todo_checkbox_brush_teeth").text().trim()){
       $("#brush_teeth_image").attr('src',"winning_star_1.png");
