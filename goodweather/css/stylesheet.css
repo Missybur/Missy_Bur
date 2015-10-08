@@ -20,17 +20,18 @@ body {
 
 .ui-title {
   background-color: #F2E638;
+  border: 2px solid #B460BF;
 }
 
-/*.ui-bar-c {
+.ui-bar-c {
   background: #B460BF;
-}*/
+}
 
 .ui-btn-inner {
 /*  height: 50px;
   width: 50px;*/
-  background-color: #F27405;
-  border: solid 3px #9F88F2;
+  background-color: #5EE3F2;
+  /*border: solid 3px #9F88F2;*/
 }
 
 .ui-btn-text {
@@ -78,9 +79,10 @@ h1 {
   text-align: center;
   background-color: #F2E638;
   font-family: 'Rambla', sans-serif;
-  border: solid 4px #F27405;
+  border: solid 4px #5EE3F2;
 }
 
 .ui-header {
   background-color: #F27405;
+  border: 1px solid #5EE3F2;
 }
