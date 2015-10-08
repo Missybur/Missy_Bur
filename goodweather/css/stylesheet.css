@@ -1,0 +1,86 @@
+body {
+  color: #F2E638;
+}
+
+@font-face {
+    font-family: 'MeteoconsRegular';
+    src: url('meteocons-webfont.eot');
+    src: url('meteocons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('meteocons-webfont.woff') format('woff'),
+         url('meteocons-webfont.ttf') format('truetype'),
+         url('meteocons-webfont.svg#MeteoconsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.ui-bar-c {
+  color: #F2E638;
+}
+
+.ui-title {
+  background-color: #F2E638;
+}
+
+/*.ui-bar-c {
+  background: #B460BF;
+}*/
+
+.ui-btn-inner {
+/*  height: 50px;
+  width: 50px;*/
+  background-color: #F27405;
+  border: solid 3px #9F88F2;
+}
+
+.ui-btn-text {
+  color: #9F88F2;
+  font-size: 1em;
+}
+
+a.ui-link-inherit {
+  color: #F2E638;
+}
+
+p {
+  font-size: 2em;
+  color: #5EE3F2;
+  font-family: 'Rambla', sans-serif;
+
+}
+
+#location {
+  color: #F27405;
+}
+
+h1 {
+  color: #9F88F2;
+  font-family: 'Rambla', sans-serif;
+
+}
+
+.icon:before {
+  font-family: "MeteoconsRegular";
+  content: attr(data-icon);
+}
+
+#current_temp {
+  font-size: 4em;
+  font-family: 'Rambla', sans-serif;
+
+}
+
+#current_summary {
+  font-size: 2.5em ;
+}
+
+.content {
+  text-align: center;
+  background-color: #F2E638;
+  font-family: 'Rambla', sans-serif;
+  border: solid 4px #F27405;
+}
+
+.ui-header {
+  background-color: #F27405;
+}
