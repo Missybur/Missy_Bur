@@ -86,3 +86,7 @@ h1 {
   background-color: #F27405;
   border: 1px solid #5EE3F2;
 }
+
+.ui-body-c, .ui-overlay-c {
+  font: #F2E638;
+}
