@@ -1,18 +1,57 @@
-h1 {
-  font-family: 'Henny Penny', cursive;
-  font-weight: 500;
-  background-color: #F2E638;
-  text-align: center;
-  color: #B460BF;
 
-};
+body {
+  background-color: #5EE3F2;
+  font-color: #F27405;
+  font-family: sans-serif;
+}
+
+span {
+  font-color: #F27405;
+
+}
+
+img {
+  border: 4px solid #F27405;
+  float: left;
+  margin: 35px;
+}
 
 p {
-  background-color: #F2E638;
-}
-
-.underwear_pics {
   color: #B460BF;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+}
+
+h1 {
+  color: #B460BF;
+  margin: 0px;
+  text-align: center;
+  font-family: bold 'Butterfly Kids', cursive;
+  font-size: 60px;
 
 }
 
+button {
+  background: #dae1e4;
+  border: none;
+  border-radius: 5px;
+  color: #1d3c6a;
+  font-size: 24px;
+  width: 480px;
+  padding: 40px 0;
+  margin: -40px -20px;
+  outline: none;
+  cursor: pointer;
+}
+.spoiler {
+  background: #1d3c6a;
+  width: 440px;
+  margin: 0 auto 20px;
+  border-radius: 5px;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 24px
+}
+.spoiler span {
+  color: #dae1e4;
+}

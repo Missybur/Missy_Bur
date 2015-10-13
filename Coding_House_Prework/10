@@ -1,0 +1,14 @@
+wordsReverser("This is fun, hopefully.");
+Would return:
+
+"sihT si nuf, yllufepoh."
+
+//
+
+function revString(str) {
+  return str.split("").reverse().join("").split(" ").reverse().join(" ");
+}
+
+console.log(revString("I am a dog"));
+
+console.log(revString("This is fun hopefully"));

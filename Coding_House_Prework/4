@@ -1,0 +1,10 @@
+var str = "Count me in";
+
+console.log(str.split(' ').length);
+
+var counter = function(str) {
+  var numWords = str.split(' ').length;
+  var numChars = str.split('').length;
+};
+
+console.log(counter(str));
