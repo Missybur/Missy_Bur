@@ -1,0 +1,20 @@
+
+div {
+    background-color: blue;
+    font: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle
+}
+
+ol {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}

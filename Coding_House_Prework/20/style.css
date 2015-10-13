@@ -1,0 +1,15 @@
+#mainChessBoard
+{
+    width:160px;
+    height:160px;
+    border:2px solid black;
+    outline: 2px solid white;
+}
+
+div
+{
+ width:20px;
+ height:20px;
+ float:left;
+}
+
