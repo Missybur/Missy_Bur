@@ -29,7 +29,7 @@ function numberText(str) {
     var chars = str.length;
     var spaces = words - 1;
     var justWords = chars - spaces;
-    var avgLength = justWords/words;
+    var avgLength = justWords / words;
 
     var result = {"words": words, "chars": chars, "avgLength": avgLength, "spaces": spaces};
     return result;
