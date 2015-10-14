@@ -1,12 +1,18 @@
 function isPalindrome(str) {
+  var arr = [];
+  var string = str.toLowerCase().split(' ');
+  string.map(function(each){
+    var reverse = each.split('').reverse().join('');
+    if (each === reverse) {
+       arr.push(true);
+    }
+    else {
+       arr.push(false);
+    }
+  })
 
-  var string = str.toLowerCase().match(/\w/g).join("");
-  var revStr = string.split('').reverse().join('');
+  return arr;
 
-  if (string === revStr){
-    return true;
-  } else {
-    return false
-  }
 }
+
 
