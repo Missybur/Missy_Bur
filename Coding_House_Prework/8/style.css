@@ -1,0 +1,41 @@
+/*body {
+  background-color: #5A5A5A;
+}*/
+
+.label {
+  background-color: #ACD6FF;
+  margin: 1px;
+  border-radius: 5px;
+}
+
+i {
+  color: white;
+}
+
+#nav-bar {
+  background-color: #ACD6FF;
+  margin: 1px;
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+
+#house {
+  background-color: #ACD6FF;
+  margin: 1px;
+  border-radius: 5px;
+  font: white;
+}
+
+.dropdown-menu {
+  background-color: white;
+  color: white;
+}
+
+.nav-tabs {
+  background-color: gray;
+}
+
+
+
+
+

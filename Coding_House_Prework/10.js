@@ -5,4 +5,4 @@ function revString(str) {
 
 console.log(revString("I am a dog"));
 
-console.log(revString("This is fun hopefully"));
+console.log(revString("This is fun hopefully."));
