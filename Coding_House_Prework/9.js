@@ -1,12 +1,12 @@
 function isPalindrome(str) {
-  if(str.length === 0) { return true; }
-  if(str[0] !== str[str.length-1]) { return false;}
-  return isPalindrome(str.slice(1,str.length-1));
+
+  var string = str.toLowerCase().match(/\w/g).join("");
+  var revStr = string.split('').reverse().join('');
+
+  if (string === revStr){
+    return true;
+  } else {
+    return false
+  }
 }
-
-console.log(isPalindrome("no x in nixon"));
-
-console.log(isPalindrome("aasdkh uasfkjb jgkhvasf"));
-
-console.log(isPalindrome("amanaplanacanalpanama"));
 
