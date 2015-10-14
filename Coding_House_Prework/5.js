@@ -1,11 +1,6 @@
-var swapCase = function(str){
-  var newLetters = "";
-  for (var i = 0; i < str.length; i++){
-    if(str[i] === str[i].toLowerCase()){
-      newLetters += str[i].toUpperCase();
-    } else {
-        newLetters += str[i].toLowerCase();
+var swapCase = function swapCase(str) {
+        return str.replace(/([a-z]+)|([A-Z]+)/g, function(match, letter) {
+            return letter ? match.toUpperCase() : match.toLowerCase();
+        });
     }
-  }
-  return newLetters;
-}
+
