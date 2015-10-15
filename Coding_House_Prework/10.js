@@ -1,8 +1,17 @@
-
+// Not working
 function revString(str) {
-  return str.split("").reverse().join("").split(" ").reverse().join(" ");
+  var strArr = [];
+  var strSplit = str.split(/(\b|\s)/g);
+    console.log(strSplit);
+
+  for (var i = 0; i < strSplit.length; i++) {
+      strArr.push(strSplit[i].split("").reverse().join(""));
+
+  }
+
+  return strArr.join("");
 }
 
-console.log(revString("I am a dog"));
+console.log(revString("This is fun, hopefully."));
 
-console.log(revString("This is fun hopefully."));
+
