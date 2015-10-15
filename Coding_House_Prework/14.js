@@ -8,10 +8,10 @@ var b = [];
 // var wordArray = str.split(/\W/);
 // var word = wordArray[i];
 
-var wordCounter = function(quote) {
-    var word = quote.split(/\W/);
+var wordCounter = function(str) {
+    var word = str.split(/\W/);
     for (var i = 0, len = word.length; i < len; i++) {
-    var word = quote[i];
+    var word = str[i];
     quoteObject[word] = (quoteObject[word] || 0) + 1;
     }
 };

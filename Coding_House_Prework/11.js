@@ -36,7 +36,6 @@
     var negatives = negArray.length;
     var odds = oddArray.length;
 
-
     return  {"odds" : odds, "negatives" : negatives, "avg" : average, "median" : median()}
 
   }

@@ -1,11 +1,18 @@
 
 div {
-    background-color: blue;
+    background-color:  #ffffff;
     font: black;
+    /*padding: 10 10 10 10px;*/
+    margin: 20px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    height: 250px;
+    /*width: 150px;*/
     vertical-align: middle
+}
+
+.col-sm-4 {
+    height: 250px;
+    width: 150px;
 }
 
 ol {
@@ -13,8 +20,51 @@ ol {
     margin-right: auto;
 }
 
+img{
+    padding: 5px;
+    float: left;
+}
+
 h1 {
+    display: block;
+    float: left;
+
+}
+
+.container {
+    height: 400px;
+    background-color: #2EB8E6;
+}
+
+.container2 {
+    /*height: 300px;*/
+    background-color: #ffffff;
+    float: left;
+    margin: 10px;
     margin-left: auto;
     margin-right: auto;
     vertical-align: middle;
+    padding: 10px;
+}
+
+.column-container {
+    height: 300px;
+    background-color: #ffffff;
+    margin: 10 10 10 10px;
+    vertical-align: middle;
+    padding: 10 10 10 10px;
+}
+
+/*.column-container {
+    height: 250px;
+    background-color: #ffffff;
+    padding: 10 0 10 10px;
+
+}*/
+
+button {
+    float: left;
+    background-color: #33CC33;
+    border-radius: 5px;
+    color: #ffffff;
 }
