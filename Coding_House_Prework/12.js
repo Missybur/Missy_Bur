@@ -1,18 +1,31 @@
+function dateDiffChecker(month, day, year){
 
-date1 = new Date(2015,04,02)
-date2 = new Date(2017,11,17)
+    var date1 = new Date();
+    var date2 = new Date(month + "/" +day+ "/" +year);
+    var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+    // console.log(timeDiff);
+    var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+    // console.log(diffDays);
 
-function dateDiff(date1,date2) {
-    var diff = Math.floor(date1.getTime() - date2.getTime());
-    var day = 1000 * 60 * 60 * 24;
+    var getYearsMonthsDaysDifference = [];
 
-    var days = Math.floor(diff/day);
-    var months = Math.floor(days/31);
-    var years = Math.floor(months/12);
+    var valuesYearMonthDay = {
+      'month(s)': 30,' day(s)': 1, 'year(s)':365
+    };
 
-    return months + " months ago"
+    for (var x in valuesYearMonthDay) {
+      var diffYearsMonthsDays = Math.floor(diffDays / valuesYearMonthDay[x]);
 
+      getYearsMonthsDaysDifference.push(diffYearsMonthsDays);
+      console.log("dif", diffYearsMonthsDays);
+
+      getYearsMonthsDaysDifference -= diffYearsMonthsDaysDifference * valuesYearMonthDay[x];w
     }
+      console.log(diffDays);
 
-a = dateDiff(date1,date2)
-console.log(a)
+    return getYearsMonthsDaysDifference;
+    // }
+  }
+
+
+console.log(dateDiffChecker(10,15,2014));

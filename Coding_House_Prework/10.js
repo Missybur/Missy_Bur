@@ -1,4 +1,3 @@
-// Not working
 function revString(str) {
   var strArr = [];
   var strSplit = str.split(/(\b|\s)/g);

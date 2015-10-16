@@ -1,28 +1,3 @@
-// var numWords;
-// var characters;
-
-// function numWords(str){
-//   var words = str.split("");
-//   var numWords = words.length;
-//   return numWords;
-//   var characters = str.length;
-//   return characters;
-// }
-
-// var output = '';
-// for (var property in object) {
-//   output += property + ': ' + object[property]+'; ';
-// }
-
-// console.log(numWords("Hi, this is a test string"));
-
-// function wordCount(str, sep) {
-
-// return str.split(' ').length;
-// };
-
-// console.log(wordCount("Hi, this is a test string"));
-
 function numberText(str) {
     var wordsSplit = str.split(" ");
     var words = wordsSplit.length;
@@ -34,4 +9,6 @@ function numberText(str) {
     var result = {"words": words, "chars": chars, "avgLength": avgLength, "spaces": spaces};
     return result;
 }
+
+console.log(numberText("Count me in"));
 
