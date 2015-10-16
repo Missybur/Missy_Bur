@@ -2,7 +2,6 @@
 function revString(str) {
   var strArr = [];
   var strSplit = str.split(/(\b|\s)/g);
-    console.log(strSplit);
 
   for (var i = 0; i < strSplit.length; i++) {
       strArr.push(strSplit[i].split("").reverse().join(""));
