@@ -19,7 +19,7 @@ function dateDiffChecker(month, day, year){
       getYearsMonthsDaysDifference.push(diffYearsMonthsDays);
       console.log("dif", diffYearsMonthsDays);
 
-      getYearsMonthsDaysDifference -= diffYearsMonthsDaysDifference * valuesYearMonthDay[x];w
+      // getYearsMonthsDaysDifference -= diffYearsMonthsDaysDifference * valuesYearMonthDay[x];
     }
       console.log(diffDays);
 
