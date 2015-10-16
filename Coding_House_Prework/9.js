@@ -15,4 +15,4 @@ function isPalindrome(str) {
 
 }
 
-
+console.log(isPalindrome("stash and pop on this level"));
