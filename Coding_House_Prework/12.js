@@ -3,6 +3,7 @@ function dateDiffChecker(month, day, year){
     var date1 = new Date();
     var date2 = new Date(month + "/" +day+ "/" +year);
     var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+
     // console.log(timeDiff);
     var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
     // console.log(diffDays);
@@ -26,6 +27,7 @@ function dateDiffChecker(month, day, year){
     return getYearsMonthsDaysDifference;
     // }
   }
+    // console.log(getYearsMonthsDaysDifference[0]);
 
 
 console.log(dateDiffChecker(10,15,2014));
