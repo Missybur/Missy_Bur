@@ -1,33 +1,22 @@
-function dateDiffChecker(month, day, year){
+function getYearsMonthsDays(month, day, year) {
 
-    var date1 = new Date();
-    var date2 = new Date(month + "/" +day+ "/" +year);
-    var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+  var date1 = new Date();
+  var date2 = new Date(month + '/' + day + '/' + year);
+  var date1Month = date1.getMonth() + 1;
+  var date2Month = date2.getMonth() + 1;
+  var date1Day = date1.getDate();
+  var date2Day = date2.getDate();
+  var date1Year = date1.getFullYear();
+  var date2Year = date2.getFullYear();
+  var monthDiff = Math.abs(date1Month - date2Month);
+  var dayDiff = Math.abs(date1Day - date2Day);
+  var yearDiff = Math.abs(date1Year - date2Year);
+  var dateMonth = new Date();
+  var month = dateMonth.getMonth() + 1
 
-    // console.log(timeDiff);
-    var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
-    // console.log(diffDays);
+  var finalMonthDayYearDiff = yearDiff + " year(s), " +monthDiff + " month(s), " + dayDiff + " day(s) ";
 
-    var getYearsMonthsDaysDifference = [];
+  return finalMonthDayYearDiff;
+}
 
-    var valuesYearMonthDay = {
-      'month(s)': 30,' day(s)': 1, 'year(s)':365
-    };
-
-    for (var x in valuesYearMonthDay) {
-      var diffYearsMonthsDays = Math.floor(diffDays / valuesYearMonthDay[x]);
-
-      getYearsMonthsDaysDifference.push(diffYearsMonthsDays);
-      console.log("dif", diffYearsMonthsDays);
-
-      // getYearsMonthsDaysDifference -= diffYearsMonthsDaysDifference * valuesYearMonthDay[x];
-    }
-      console.log(diffDays);
-
-    return getYearsMonthsDaysDifference;
-    // }
-  }
-    // console.log(getYearsMonthsDaysDifference[0]);
-
-
-console.log(dateDiffChecker(10,15,2014));
+console.log(getYearsMonthsDays(2010, 3, 20));
