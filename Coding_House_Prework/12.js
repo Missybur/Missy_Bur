@@ -1,4 +1,4 @@
-function getYearsMonthsDays(month, day, year) {
+function dateDifference(month, day, year) {
 
   var date1 = new Date();
   var date2 = new Date(month + '/' + day + '/' + year);
@@ -19,4 +19,4 @@ function getYearsMonthsDays(month, day, year) {
   return finalMonthDayYearDiff;
 }
 
-console.log(getYearsMonthsDays(2010, 3, 20));
+console.log(dateDifference(2010, 3, 20));
