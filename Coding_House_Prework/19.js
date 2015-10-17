@@ -72,6 +72,45 @@ for (var prop in obj){
   console.log("obj." + prop + " = " + obj[prop]);
 }
 
+//MAP:
+
+var numArray = [1, 2, 5, 7, 11];
+var sqrRootArray = numArray.map(Math.sqrt);
+
+console.log(sqrRootArray);
+
+//REDUCE:
+
+var reduceArray = [3, 5, 7, 9, 12];
+
+var total = reduceArray.reduce(function(a, b){
+  return a + b;
+});
+
+console.log("reduce function result: " + total);
+
+//FILTER:
+
+// var oddsAndEvens = [1, 22, 35, 2, 4, 7, 9];
+
+function getOddNumbers(arr) {
+  return arr.filter(function(value){
+    return value % 2 !== 0;
+  });
+}
+
+console.log(getOddNumbers([1, 22, 35, 2, 4, 7, 9]));
+
+//SORT:
+
+var wordList = ['water', 'balloon', 'baseball', 'computer', 'notebook', 'frisbee']
+
+var revAlpha = wordList.sort().reverse();
+
+console.log(revAlpha);
+
+
+
 
 
 
