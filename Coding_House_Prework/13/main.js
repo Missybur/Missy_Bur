@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $(.div).each(function invertColor(hexTripletColor) {
+
+  function invertColor(hexTripletColor) {
       var color = hexTripletColor;
       color = color.substring(1);           // remove #
       color = parseInt(color, 16);          // convert to integer
@@ -8,6 +9,11 @@ $(document).ready(function(){
       color = ("000000" + color).slice(-6); // pad with leading zeros
       color = "#" + color;                  // prepend #
       return color;
-  });
+  }
 
-})
+  $(".invert-color").each(function(){
+    $(this).css("background-color", invertColor());
+  });
+});
+
+
