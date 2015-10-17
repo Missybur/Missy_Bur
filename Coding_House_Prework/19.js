@@ -1,8 +1,117 @@
+// WHILE:
+
+var arr1 = [2, 7, 4, 8, 6, 4];
+var largest1 = 0;
+var i = 0;
+
+while (i < arr1.length) {
+
+  if (arr1[i] > largest1)
+    largest1 = arr1[i];
+
+  i++;
+}
+console.log("while loop result: " + largest1);
+
+// DO WHILE:
+
+var arr2 = [2, 7, 4, 8, 6, 4];
+var largest2 = arr2[0];
+var i = 0;
+
+do {
+    if (arr2[i] > largest2){
+
+      largest2 = arr2[i];
+    };
+
+    i++;
+} while ( i <= arr2.length -1);
+console.log("do while loop result: " + largest2);
+
+//FOR:
+
+var arr3 = [2, 7, 4, 8, 6, 4];
+var largest3 = 0;
+
+for (var i = 0; i < arr3.length; i++){
+  if (largest3 < arr3[i]){
+    largest3 = arr3[i];
+  };
+
+};
+
+console.log("for loop result: " + largest3);
+
+//FOR EACH:
+
+var arr4 = [2, 7, 4, 8, 6, 4];
+var largest4 = 0;
+var i = 0;
+
+arr4.forEach(function (item, index, array){
+
+  for (var i = 0; i < arr4.length; i++){
+    if (largest4< arr4[i]){
+      largest4 = arr4[i];
+    };
+
+  };
+
+});
+
+console.log("for each loop result: " + largest4);
+
+
+// FOR IN:
+
+
+var obj = { "wheels": 3, "horsepower": 600, "decal": "flames", "awesome": true , "holdsBarred": [] }
+
+for (var prop in obj){
+  console.log("obj." + prop + " = " + obj[prop]);
+}
 
 
 
 
-// // WHILE LOOP:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// WHILE LOOP:
 // console.log("*****");
 
 
@@ -10,23 +119,10 @@
 // // DO WHILE LOOP:
 // console.log("*****");
 
-// var arr = [2, 7, 4, 8, 6, 4];
+// var arr2 = [2, 7, 4, 8, 6, 4];
 // var i = 0;
 // var highestNumber = arr[0];
 
-// do {
-//     if (arr[i] > highestNumber
-//      ){
-//         highestNumber
-//          = arr[i];
-//     }
-
-
-//     // console.log(arr[i]);
-//     i++;
-// } while ( i <= arr.length -1);
-// console.log(highestNumber
-//     );
 
 // // FOR LOOP:
 // console.log("*****");
