@@ -1,3 +1,6 @@
+// $(document).ready(function(){
+
+
 for (var i=0; i< 64; i++){
     document.getElementById("mainChessBoard").appendChild(document.createElement("div")).style.backgroundColor = parseInt((i / 8) + i) % 2 == 0 ? 'black' : 'white';
 }
@@ -55,4 +58,4 @@ function rgb_to_hex(red, green, blue)
       $(this).html(rainbowtext);
     });
   };
-})( jQuery );
+});

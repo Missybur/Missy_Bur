@@ -1,21 +1,21 @@
 body {
   font-family: 'Poiret One', cursive;
-  padding: 10px;
+  font-size: 20px;
 }
 
 #mainChessBoard
 {
-    width:160px;
-    height:160px;
-    border:2px solid black;
+    width: 160px;
+    height: 160px;
+    border: 2px solid black;
     outline: 2px solid white;
 }
 
 div
 {
- width:20px;
- height:20px;
- float:left;
+ width: 20px;
+ height: 20px;
+ float: left;
 }
 
 h1 {
@@ -23,10 +23,10 @@ h1 {
 
 
 .rainbow {
-  padding: 20px;
-  margin: 50px;
-  height: 300px;
-  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  height: 175px;
+  width: 200px;
   background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
   background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
   color:transparent;
