@@ -1,7 +1,6 @@
   var arrayAnalyzer = function(){
     var negArray = [];
     var oddArray = [];
-    var total = 0;
     var args = Array.prototype.slice.call(arguments);
 
     args.forEach(function(val){
@@ -24,7 +23,7 @@
     var half = Math.floor(sorted.length / 2);
 
     var median = function(){
-      if (sorted.length % 2) {
+      if (sorted.length % 2 ) {
         return sorted[half];
       } else {
         return (sorted[half -1] + sorted[half]) / 2.0;
