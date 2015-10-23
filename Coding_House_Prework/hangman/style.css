@@ -44,7 +44,7 @@ body {
     width: 250px;
     height: 75px;
     background-color: #0BEAFF;
-    border: 2px #ffffff;
+    border: 4px solid #100DFE;
     border-radius: 20px;
     margin: 40px;
 
@@ -103,9 +103,9 @@ h1 {
   text-align: center;
   color: #ffffff;
   font-family: 'Allerta Stencil', sans-serif;
-  font-size: 22px;
+  font-size: 40px;
   float: center;
-  padding: 10px;
+  margin: 5px;
 }
 
 h2 {
@@ -115,8 +115,11 @@ h2 {
   font-family: 'Allerta Stencil', sans-serif;
   font-size: 22px;
   float: center;
-  padding: 10px;
+  margin: 5px;
+
 }
+
+
 .current-word {
     list-style: none;
     color: #ffffff;
