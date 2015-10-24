@@ -81,6 +81,9 @@ $(document).ready(function () {
         // guessInput.value = '';
     }
 
+
+
+
     function changeImage6() {
 
         if (lives === 6) {

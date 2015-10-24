@@ -1,35 +1,340 @@
-function getYearsMonthsDays(month, day, year) {
+// function splitSum(code, cheesecake) {
 
-  var date1 = new Date();
-  console.log(date1);
-  var date2 = new Date(month + '/' + day + '/' + year);
-  var date1Month = date1.getMonth() + 1;
-  var date2Month = date2.getMonth() + 1;
-  var date1Day = date1.getDate();
-  var date2Day = date2.getDate();
-  var date1Year = date1.getFullYear();
-  var date2Year = date2.getFullYear();
 
-  console.log(date1Year);
+//     var split = code.split(cheesecake);
 
-  console.log(date1Day);
-  console.log(date2Day);
-  var monthDiff = Math.abs(date1Month - date2Month);
-  var dayDiff = Math.abs(date1Day - date2Day);
-  console.log(dayDiff);
-  console.log(monthDiff);
 
-  console.log(date1Month);
-  console.log(date2Month);
+//     var whatever = split.map(function(numAsString){
+//       return parseInt(numAsString)
+//     });
 
-  console.log(date2);
-  var dateMonth = new Date();
-  var month = dateMonth.getMonth() + 1
-  console.log(month)
 
-  var finalMonthDayYearDiff = monthDiff + " month(s) " + dayDiff + " day(s)";
-  console.log(finalMonthDayYearDiff);
 
-}
+//     var sum = whatever.reduce(function(prevVal, curVal){
+//       return parseInt(prevVal + curVal);
+//     });
 
-console.log(getYearsMonthsDays(2010, 3, 20));
+//     return sum;
+
+// }
+
+// console.log(splitSum("3/4/5/1", "/"));
+// console.log(splitSum("-1$-5$5$-4", "$"));
+
+
+   // var sorted = args.sort(function(a, b){
+   //    return (a - b);
+   //  })
+
+
+//   var arrayAnalyzer = function(){
+//     var negArray = [];
+//     var oddArray = [];
+//     var args = Array.prototype.slice.call(arguments);
+
+//     args.forEach(function(val){
+//       if (val < 0 ) {
+//         negArray.push(true);
+//       }
+//       if (val % 2 !== 0 && val !== 0) {
+//           oddArray.push(val);
+//       }
+//     });
+
+//     var sum = args.reduce(function(prevVal, curVal){
+//       return prevVal + curVal;
+//     })
+
+//     var sorted = args.sort(function(a, b){
+//       return (a - b);
+//     })
+
+//     var half = Math.floor(sorted.length / 2);
+
+//     var median = function(){
+//       if (sorted.length % 2 ) {
+//         return sorted[half];
+//       } else {
+//         return (sorted[half -1] + sorted[half]) / 2.0;
+//       }
+//     }
+
+//     var average1 = sum/args.length;
+//     var average = average1.toFixed(2);
+//     var negatives = negArray.length;
+//     var odds = oddArray.length;
+
+//     return  {"odds" : odds, "negatives" : negatives, "avg" : average, "median" : median()}
+
+//   }
+
+// console.log(arrayAnalyzer(7, -3, 0, 12, 44, -5, 3));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // WHILE:
+
+// var arr1 = [2, 7, 4, 8, 6, 4];
+// var largest1 = 0;
+// var i = 0;
+
+// while (i < arr1.length) {
+
+//   if (arr1[i] > largest1)
+//     largest1 = arr1[i];
+
+//   i++;
+// }
+// console.log("while loop result: " + largest1);
+
+// // DO WHILE:
+
+// var arr2 = [2, 7, 4, 8, 6, 4];
+// var largest2 = arr2[0];
+// var i = 0;
+
+// do {
+//     if (arr2[i] > largest2){
+
+//       largest2 = arr2[i];
+//     };
+
+//     i++;
+// } while ( i <= arr2.length -1);
+// console.log("do while loop result: " + largest2);
+
+// //FOR:
+
+// var arr3 = [2, 7, 4, 8, 6, 4];
+// var largest3 = 0;
+
+// for (var i = 0; i < arr3.length; i++){
+//   if (largest3 < arr3[i]){
+//     largest3 = arr3[i];
+//   };
+
+// };
+
+// console.log("for loop result: " + largest3);
+
+// //FOR EACH:
+
+// var arr4 = [2, 7, 4, 8, 6, 4];
+// var largest4 = 0;
+// var i = 0;
+
+// arr4.forEach(function (item, index, array){
+
+//   for (var i = 0; i < arr4.length; i++){
+//     if (largest4< arr4[i]){
+//       largest4 = arr4[i];
+//     };
+
+//   };
+
+// });
+
+// console.log("for each loop result: " + largest4);
+
+
+// // FOR IN:
+
+
+// var obj = { "wheels": 3, "horsepower": 600, "decal": "flames", "awesome": true , "holdsBarred": [] }
+
+// for (var prop in obj){
+//   console.log("obj." + prop + " = " + obj[prop]);
+// }
+
+// //MAP:
+
+// var numArray = [1, 2, 5, 7, 11];
+// var sqrRootArray = numArray.map(Math.sqrt);
+
+// console.log(sqrRootArray);
+
+// //REDUCE:
+
+// var reduceArray = [3, 5, 7, 9, 12];
+
+// var total = reduceArray.reduce(function(a, b){
+//   return a + b;
+// });
+
+// console.log("reduce function result: " + total);
+
+// //FILTER:
+
+// // var oddsAndEvens = [1, 22, 35, 2, 4, 7, 9];
+
+// function getOddNumbers(arr) {
+//   return arr.filter(function(value){
+//     return value % 2 !== 0;
+//   });
+// }
+
+// console.log(getOddNumbers([1, 22, 35, 2, 4, 7, 9]));
+
+// //SORT:
+
+// var wordList = ['water', 'balloon', 'baseball', 'computer', 'notebook', 'frisbee']
+
+// var revAlpha = wordList.sort().reverse();
+
+// console.log(revAlpha);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // WHILE LOOP:
+// // console.log("*****");
+
+
+
+// // // DO WHILE LOOP:
+// // console.log("*****");
+
+// // var arr2 = [2, 7, 4, 8, 6, 4];
+// // var i = 0;
+// // var highestNumber = arr[0];
+
+
+// // // FOR LOOP:
+// // console.log("*****");
+
+// // var arr = [2, 7, 4, 8, 6, 4];
+// // var largestNumArr = arr[0];
+
+// // for ( var i = 0; i < arr.length; i++) {
+// //   if (largestNumArr < arr[i] ) {
+// //       largestNumArr = arr[i];
+// //   }
+// // }
+
+// // console.log(largestNumArr);
+
+// // // REDUCE:
+// // console.log("*****");
+
+
+// // var reduceNums = [3, 5, 7, 9, 12].reduce(function(previousValue, currentValue, index, array) {
+// //     return previousValue + currentValue;
+// // });
+
+// // console.log(reduceNums);
+
+
+// // // FILTER:
+// // console.log("*****");
+
+// // var arr = [1, 22, 35, 2, 4, 7, 9];
+
+// // function removeOdd(arr) {
+// //     return arr.filter(function(value) {
+// //         return value % 2 !== 0;
+// //     });
+// // }
+
+// // console.log(removeOdd(arr));
+
+// // // FOR EACH LOOP:
+// // console.log("*****");
+
+
+
+// // // FOR...IN LOOP:
+// // console.log("*****");
+
+
+// // var obj = { "wheels": 3, "horsepower": 600, "decal": "flames", "awesome": true , "holdsBarred": [] };
+
+// // for (var prop in obj) {
+// //     console.log("o." + prop + " = " + obj[prop]);
+// // }
+
+// // // MAP:
+// // console.log("*****");
+
+// // var nums = [1, 2, 5, 7, 11];
+// // var doubles = nums.map(function(num) {
+// //     return num * 2;
+// // });
+
+// // console.log(doubles);
+
+// // // SORT REVERSE ALPHABETICALLY
+
+// // var aZ = ['water', 'balloon', 'baseball', 'computer', 'notebook', 'frisbee'];
+// // var aZReverse = aZ.reverse();
+// // var zA = aZReverse.reverse();
+
+// // console.log(zA)
+
+// // console.log("*****");
+
+

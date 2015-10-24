@@ -1,93 +1,139 @@
 $(document).ready(function(){
 
-  var alphabet = ['A', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-  var word;
-  var guess;
-  var guesses = [];
-  var lives;
-  var counter = [];
-  var space = [];
+  var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
-  var livesCount = document.getElementById("myLives");
+    var possible_answers = ["Lincoln", "Kennedy", "Washington", "Roosevelt", "Jefferson", "Clinton", "Nixon", "Wilson", "Johnson", "Adams"];
 
-  var buttons = function(){
-    myButtons = document.getElementById('buttons');
-    letters = document.createElement('ul');
+    var getRandomAnswer = possible_answers[Math.floor(Math.random() * possible_answers.length)];
 
-    for (var i = 0; i < alphabet.length; i++){
-      letters.id = 'alphabet';
-      list = document.createElement('li');
-      list.is = 'letter';
-      list.innerHTML = alphabet[i];
-      check();
-      myButtons.appendChild(letters);
-      letters.appendChild(list);
+  $(".letter").click(function(){
+    letterValue = $(this).text();
+
+    emptyLetterContainerSpace.push(letterValue);
+    matchingLetters = emptyLetterValueBox.join(" ");
+    $(".guess").val(matchingLetters);
+    console.log(matchingLetters);
+  });
+
+});
+
+
+// Modification: if wrong guess, display wrong letters
+// Modification: if all correct, display congratulations
+var numGuesses = 0;
+var hangman = [
+                ['h','e','l','l','o'],
+                ['w','o','r','l','d'],
+                ['m','a','t','h'],
+                ['b','i','l','l','i','a','r','d','s'],
+                ['a','p','o','t','h','e','m'],
+                ['r','a','d','i','u','s'],
+                ['a','l','i','e','n','s'],
+                ['d','o','c','t','o','r'],
+                ['i','g','l','o','o'],
+                ];
+var selection = floor(random(hangman.length));
+var drawSpaces = function()
+{
+    for (var i = 0; i <hangman[selection].length; i++ )
+    {
+        fill(0, 0, 0);
+        line(i*40 + 20, 100, i*40 + 50, 100 );
     }
-  }
+};
 
-
-  result = function(){
-    wordHolder = document.getElementById('hold');
-    correct = document.createElement('ul');
-
-    for (var i = 0; i < word.length; i++){
-      correct.setAttribute('id', 'my-word');
-      guess = document.createElement('li');
-      guess.setAttribute('class', 'guess');
-
-      if(word[i] === '_';){
-        guess.innerHTML = "_";
-        space = 1;
-      } else {
-        guess.innerHTML = "_";
-      }
-
-      guesses.push(guess);
-      wordHolder.appendChild(correct);
-      correct.appendChild(guess);
-    }
-  }
-
-check = function(){
-  list.onclick = function(){
-    var guess = (this.innerHTML);
-    this.setAttribute("class", "active");
-    this.onclick = null;
-    for (var i = 0; i < word.length; i++){
-      if (word[i] === guess){
-        guesses[i].innerHTML = guess;
-        counter += 1;
+var keyPressed = function ()
+{
+    var temp = 0;
+    if ( numGuesses >= 0 )
+    {
+      for ( var i = 0; i < hangman[selection].length; i++ )
+    {
+        if ( key.toString() === hangman[selection] [i] )
+        {
+            fill(255, 0, 0);
+            textSize (20) ;
+            text (hangman[selection] [i], i*40 + 30, 95);
+            temp++;
+            hangman[selection] [i] = '$';
         }
-      }
     }
-  }
+    if ( temp === 0 )    // wrong guess
+    {
+            numGuesses++;
+            fill(255, 0, 255);
+            textSize (20);
+            text (key, 220+numGuesses*20, 195);
+        }
+    }
+};
+var drawPerson = function()
+{
+    stroke (0, 0, 0);
+    noFill();
+    line ( 100, 150, 100, 350 );
+    line ( 100, 150, 200, 150 );
+    line (200, 150, 200, 180 );
 
-  play = function(){
+    if (numGuesses > 0 )               // head
+    {
+        ellipse ( 200, 200, 40, 40 );
+    }
 
-    var categories = ["Eminem", "Tupac", "Biggy", "Jay-Z", "Lil Wayne", "Snoop Dog", "Timbaland" ];
+        if ( numGuesses > 1 )         // torso
+        {
+            line ( 200, 220, 200, 280 );
+        }
 
-    chosenCategory = categories[Math.floor(Math.random() * categories.length)];
-    word = chosenCategoryMath.floor(Math.random() * categories.length)];
-    word = word.replace(/\s/g, "_");
-    console.log(word);
-    buttons();
+        if (numGuesses > 2 )          // left leg
+        {
+            line ( 200, 280, 170, 320 );
+        }
 
-    guesses = [];
-    lives = 6;
-    counter = 0;
-    space = 0;
-    result();
-    comments();
-    canvas();
-  }
-  play();
+        if ( numGuesses > 3 )       // right leg
+        {
+            line ( 200, 280, 230, 320 );
+        }
 
-document.getElementById('reset').onclick = function(){
-  correct.parentNode.removeChild(correct);
-  letters.parentNode.removeChild(letters);
-  play();
-}
+        if ( numGuesses > 4 )       // left arm
+        {
+            line ( 200, 240, 160, 230 );
+        }
+
+        if ( numGuesses > 5 )       // right arm
+        {
+            line ( 200, 240, 240, 230 );
+            fill (255, 0, 255);
+            textSize (24);
+            text ("Game Over !!", 140, 380 );
+            numGuesses = -1;
+        }
+};
+var checkWin = function ()
+{
+    var temp = 0;
+
+    for ( var i = 0; i < hangman [selection].length; i++ )
+    {
+        if ( hangman [selection] [i] === '$' )
+        {
+            temp++;
+        }
+    }
+
+    if ( temp === hangman [selection].length )
+    {
+        fill (255, 0, 0);
+        text ("congratulatons!", 200, 360);
+    }
+};
 
 
-})
+
+var draw = function()
+{
+    drawSpaces ();
+    drawPerson ();
+    checkWin ();
+};
 
