@@ -168,14 +168,14 @@
 
         }
 
-        #alphabet li:hover {
+      /*  #alphabet li:hover {
           background: #fff;
           border: dashed 1px #99001A; ;
           color: #FF3B77;
          /* width: 60px;
           height: 60px;*/
           /*font-size: 30px;*/
-        }
+        }*/
 
         #my-word {
           margin: 0;
