@@ -1,3 +1,15 @@
+function letterChanges(str){
+
+  return str.replace(/[A-Z]/g, function(x){
+    return String.fromCharCode(x.charCodeAt(0)+1); }).replace(/[0-9]/g, function(y){
+      return y.toUpperCase();
+  })
+}
+
+console.log(letterChanges("Aa1h2vjh Bb37hcj Cca976hjvh"));
+
+
+
 // var compressor = function(s) {
 
 //   var objContainer = {};
@@ -102,20 +114,20 @@
 
 // console.log(alpha);
 
-function findRepeats(str){
-  str.
-}
+// function findRepeats(str){
+//   str.
+// }
 
 
-var obj={}
-var repeats=[];
-str="aaaaabbbbbbbbbccccpqrstuv"
+// var obj={}
+// var repeats=[];
+// str="aaaaabbbbbbbbbccccpqrstuv"
 
-for(x = 0, length = str.length; x < length; x++) {
-    var l = str.charAt(x)
-    obj[l] = (isNaN(obj[l]) ? 1 : obj[l] + 1);
-}
+// for(x = 0, length = str.length; x < length; x++) {
+//     var l = str.charAt(x)
+//     obj[l] = (isNaN(obj[l]) ? 1 : obj[l] + 1);
+// }
 
-console.log(obj)
+// console.log(obj)
 
 

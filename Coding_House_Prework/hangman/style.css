@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+body {
+  /*background-color: #0E86E7;*/
+  color: #0053C3;
+  font-family: 'Allerta Stencil', sans-serif;
+  float: center;
+  margin: 10px;
+  background-image: url("http://smallroom.co/wp-content/uploads/2015/08/garage-horizontal-rustic-wood-background-with-wild-and-western-old-wood-background-123rf-7860465-l.jpg");
+  background-size: cover;
+}
+/* Keep it simple - improvement would be to not display characters */
+ .letter {
+    list-style: none;
+    float: left;
+    background-color: #07070D;
+    color: #07070D;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    margin: 40px;
+    height: 50px;
+    padding: 50px;
+    border: solid 5px #737272;
+    padding: 10px;
+    text-align: center;
+}
+
+#letter {
+    font-color: #F2F2F2;
+}
+
+.container3 {
+    margin: 5px;
+    /*padding: 250px;*/
+    float: left;
+}
+
+.container {
+  margin: 10px;
+  padding: 10px;
+}
+
+.input {
+    font-family: 'Allerta Stencil', sans-serif, #ffffff;
+    font-size: 22px;
+    color: #ffffff;
+    width: 250px;
+    height: 75px;
+    background-color: #07070D;
+    border: 6px solid #F2F2F2;
+    padding: 20px;
+    /*border-radius: 20px;*/
+    margin: 60px;
+    float: left;
+
+    /*color: #ffffff;*/
+}
+
+p {
+    font-family: 'Allerta Stencil', sans-serif;
+    color: #ffffff;
+    font-size: 22px;
+    text-align: center;
+    padding: 0px;
+}
+
+#guess{
+    width: 110px;
+    height: 110px;
+    margin: 60px;
+    border-radius: 60px;
+    border: 4px dashed #F2F2F2;
+    background-color: #07070D;
+    font-family: 'Allerta Stencil', sans-serif, #ffffff;
+    font-size: 22px;
+    color: #ffffff;
+    float: left;
+}
+
+#guess:hover {
+  background-color: #737272;
+  color: #07070D;
+  border-radius: 60px;
+  border: 4px dashed #07070D;
+}
+
+#restart {
+    width: 110px;
+    height: 110px;
+    margin: 60px;
+    border-radius: 60px;
+    border: 4px dashed #F2F2F2;
+    background-color: #07070D;
+    font-family: 'Allerta Stencil', sans-serif, #ffffff;
+    font-size: 22px;
+    color: #F2F2F2;
+    float: left;
+}
+
+#restart:hover {
+  background-color: #737272;
+  color: #07070D;
+  border-radius: 60px;
+  border: 4px dashed #07070D;
+}
+
+#man {
+    margin: 40px;
+    padding: 20px;
+    /*float: right;*/
+}
+
+#image-holder {
+  border: 7px solid #BDBFBF;
+  height: 250px;
+  width: 250px;
+  background-color: #07070D;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  float: right;
+
+}
+
+h1 {
+  /*background-color:#0E86E7;*/
+  text-align: center;
+  color: #F2F2F2;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 120px;
+  float: center;
+  margin: 10px;
+}
+
+h2 {
+  /*background-color:#0E86E7;*/
+  text-align: center;
+  color: #07070D;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 40px;
+  float: center;
+  margin: 15px;
+
+}
+
+.current-word {
+    list-style: none;
+    color: #07070D;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 40px;
+    /*padding: 20px;*/
+    /*margin: 70px;*/
+    float: center;
+
+}
+
+.output {
+    color: #F2F2F2;
+    font-size: 50px;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.correct {
+  background-color:##0BEAFF;
+  color: #F2F2F2;
+  transition: all 1s ease;
+}
+
+.error {
+    color: red;
+    opacity: 1;
+    font-size: 30px;
+
+}
+
+.warning {
+    color: #07070D;
+    font-size: 30px;
+    opacity: 1;
+}
+
+.win {
+    color: #ffffff;
+    opacity: 1;
+    font-size: 60px;
+}
