@@ -22,13 +22,13 @@ body {
     height: 75px;
     margin: 20px;
     padding: 50px;
-    border: solid 8px #F2F2F2;
+    border: solid 6px #F2F2F2;
     padding: 15px;
     text-align: center;
 }
 
 #letter {
-    font-color: #F2F2F2;
+    font-color: #C90012;
 }
 
 .container3 {
@@ -71,16 +71,16 @@ p {
     height: 110px;
     margin: 60px;
     border-radius: 60px;
-    border: 4px dashed #F2F2F2;
+    border: 4px dashed #C90012;
     background-color: #07070D;
     font-family: 'Allerta Stencil', sans-serif, #ffffff;
     font-size: 22px;
-    color: #ffffff;
+    color: #C90012;
     float: left;
 }
 
 #guess:hover {
-  background-color: #737272;
+  background-color: #C90012;
   color: #07070D;
   border-radius: 60px;
   border: 4px dashed #07070D;
@@ -91,16 +91,16 @@ p {
     height: 110px;
     margin: 60px;
     border-radius: 60px;
-    border: 4px dashed #F2F2F2;
+    border: 4px dashed #C90012;
     background-color: #07070D;
     font-family: 'Allerta Stencil', sans-serif, #ffffff;
     font-size: 22px;
-    color: #F2F2F2;
+    color: #C90012;
     float: left;
 }
 
 #restart:hover {
-  background-color: #737272;
+  background-color: #C90012;
   color: #07070D;
   border-radius: 60px;
   border: 4px dashed #07070D;
@@ -109,7 +109,7 @@ p {
 #man {
     margin: 40px;
     padding: 20px;
-    /*float: right;*/
+    color: #C90012;
 }
 
 #image-holder {
@@ -137,13 +137,33 @@ h1 {
 h2 {
   /*background-color:#0E86E7;*/
   text-align: center;
-  color: #F2F2F2;
+  color: #07070D;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 50px;
+  float: center;
+  margin: 15px;
+}
+
+h3 {
+  /*background-color:#0E86E7;*/
+  text-align: center;
+  color: #07070D;
   font-family: 'Allerta Stencil', sans-serif;
   font-size: 40px;
   float: center;
   margin: 15px;
-
 }
+
+h4 {
+  text-align: center;
+  color: #C90012;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 40px;
+  float: center;
+  margin: 15px;
+}
+
+
 
 .current-word {
     list-style: none;
@@ -157,7 +177,7 @@ h2 {
 }
 
 .output {
-    color: #F2F2F2;
+    color: #C90012;
     font-size: 50px;
     opacity: 0;
     transition: opacity 1s ease;
@@ -165,19 +185,19 @@ h2 {
 
 .correct {
   background-color:#07070D;
-  color: #F2F2F2;
+  color: #C90012;
   transition: all 1s ease;
 }
 
 .error {
-    color: red;
+    color: #8C0000;
     opacity: 1;
     font-size: 40px;
 
 }
 
 .warning {
-    color: #F2F2F2;
+    color: #C90012;
     font-size: 30px;
     opacity: 1;
 }
