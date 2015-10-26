@@ -30,18 +30,10 @@ $(document).ready(function () {
         man.innerHTML = 'You have ' + lives + ' lives remaining';
         output.innerHTML = '';
 
-        // function changeImage(){
-        //         $("#image-holder").attr('src', "/images/hangman_1.png");
-        //     }
-        // }
-
-
         document.getElementById("letter").value = '';
 
         /* make sure guess button is enabled */
         guessButton = document.getElementById("guess");
-        // guessInput.style.display = 'inline';
-        // guessButton.style.display = 'inline';
 
         /* set up display of letters in current word */
         letters = document.getElementById("letters");
@@ -62,87 +54,78 @@ $(document).ready(function () {
             output.innerHTML = messages.lose;
             output.classList.add('error');
             var images = document.getElementsByTagName('img');
-var l = images.length;
-for (var i = 0; i < l; i++) {
-    images[0].parentNode.removeChild(images[0]);
-}
+            var l = images.length;
+            for (var i = 0; i < l; i++) {
+                images[0].parentNode.removeChild(images[0]);
+            }
         }
 
     }
 
-    // function changeImage6() {
-    //     if (lives === 6)
-    //     var img = document.createElement("IMG");
-    //     img.src = "images/hangman_6.jpg";
-    //     var oldImg = document.getElementById('oldImg');
-    //     document.getElementById('imgDiv').replaceChild(img, oldImg);
-    // }
+    function changeImage(){
 
-    // function changeImage5() {
-    //     if (lives === 5)
-    //     var img = document.createElement("IMG");
-    //     img.src = "images/hangman_5.jpg";
-    //     var oldImg = document.getElementById('oldImg');
-    //     document.getElementById('imgDiv').replaceChild(img, oldImg);
-    // }
+        var img = document.createElement("img");
 
-    function changeImage() {
-
-        if (lives === 6) {
-        var elem6 = document.createElement("img");
-        elem6.setAttribute("src", "images/hangman_6.jpg");
-        document.getElementById("image-holder").appendChild(elem6);
-
+        if (lives === 6){
+            // var elem = document.createElement("img");
+            img.src = "images/hangman_6.jpg";
+            $("#image-holder").html(img);
+            // $("#image-holder").attr("src", "images/hangman_6.jpg");
             console.log("yes6")
+
         }
 
-        if (lives === 5) {
-        var elem5 = document.createElement("img");
-        elem5.setAttribute("src", "images/hangman_6.jpg")
-        document.getElementById("image-holder").appendChild(elem5);
-
+        if (lives === 5){
+            // var elem = document.createElement("img");
+            img.src = "images/hangman_6.jpg";
+            $("#image-holder").html(img);
+            // $("#image-holder").attr("src", "images/hangman_5.jpg");
             console.log("yes5")
+
         }
 
-        if (lives === 4) {
-        var elem4 = document.createElement("img");
-        elem4.setAttribute("src", "images/hangman_5.jpg")
-        document.getElementById("image-holder").appendChild(elem4);
-
+        if (lives === 4){
+            img.src = "images/hangman_5.jpg";
+            $("#image-holder").html(img);
+            // $("#image-holder").attr("src", "images/hangman_4.jpg");
             console.log("yes4")
+
         }
-
-        if (lives === 3) {
-        var elem3 = document.createElement("img");
-        elem3.setAttribute("src", "images/hangman_4.jpg")
-        document.getElementById("image-holder").appendChild(elem3);
-
+        if (lives === 3){
+            img.src = "images/hangman_4.jpg";
+            $("#image-holder").html(img);
+            // $("#image-holder").attr("src", "images/hangman_3.jpg");
             console.log("yes3")
+
         }
 
-        if (lives === 2) {
-        var elem2 = document.createElement("img");
-        elem2.setAttribute("src", "images/hangman_3.jpg")
-        document.getElementById("image-holder").appendChild(elem2);
-
+         if (lives === 2){
+            img.src = "images/hangman_3.jpg";
+            $("#image-holder").html(img);
+            // $("#image-holder").attr("src", "images/hangman_3.jpg");
             console.log("yes2")
+
         }
 
-        if (lives === 1) {
-        var elem1 = document.createElement("img");
-        elem1.setAttribute("src", "images/hangman_2.jpg")
-        document.getElementById("image-holder").appendChild(elem1);
-
+         if (lives === 1){
+            img.src = "images/hangman_2.jpg";
+            $("#image-holder").html(img);
+            // $("#image-holder").attr("src", "images/hangman_3.jpg");
             console.log("yes1")
-        }
-        if (lives === 0) {
-        var elem0 = document.createElement("img");
-        elem0.setAttribute("src", "images/hangman_1.jpg")
-        document.getElementById("image-holder").appendChild(elem0);
 
-            console.log("yes0")
         }
+
+
+         if (lives === 0){
+            img.src = "images/hangman_1.jpg";
+            $("#image-holder").html(img);
+            // $("#image-holder").attr("src", "images/hangman_3.jpg");
+            console.log("yes0")
+
+        }
+
     }
+
 
      function showAnswer(){
         if (lives === 0){
@@ -214,27 +197,17 @@ for (var i = 0; i < l; i++) {
                     if (lives === 2) changeImage();
                     if (lives === 1) changeImage();
                     if (output.innerHTML = messages.lose) showAnswer();
-                    if (lives === 0) gameOver();
-    // if (lives = 4){
-    //     $(#image-holder).attr('src', "hangman_1.png")
-    // }
-
+                    if (lives === 0) changeImage();
+                    // if (lives === 0) gameOver();
+                    }
+                }
+                /* not a valid letter, error */
+                else {
+                    output.classList.add('error');
+                    output.innerHTML = messages.validLetter;
                 }
             }
-            /* not a valid letter, error */
-            else {
-                output.classList.add('error');
-                output.innerHTML = messages.validLetter;
-            }
-        }
 
-        // else {
-
-        //             if (lives === 4) {
-        //                 $("#image-holder").attr('src',"images/hangman_1.png")
-        //                 console.log("yes");
-        //             }
-        //         }
         /* no letter entered, error */
         else {
             output.classList.add('error');
