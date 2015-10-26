@@ -8,18 +8,18 @@ $(document).ready(function () {
         lives = 6;
         presidentsArray = ["lincoln", "kennedy", "washington", "roosevelt", "jefferson", "clinton", "nixon", "wilson", "johnson", "adams"];
         messages = {
-            win: 'You win!',
-            lose: 'Game over!',
+            win: 'YOU WIN!',
+            lose: 'GAME OVER!',
             already_guessed: ' already guessed, please try again...',
             validLetter: 'Please enter a letter from A-Z'
         };
+
 
         lettersGuessed = lettersMatched = '';
         numLettersMatched = 0;
 
         /* choose a word */
         currentWord = presidentsArray[Math.floor(Math.random() * presidentsArray.length)];
-
         console.log(currentWord);
 
         /* make #man and #output blank, create vars for later access */
@@ -30,18 +30,10 @@ $(document).ready(function () {
         man.innerHTML = 'You have ' + lives + ' lives remaining';
         output.innerHTML = '';
 
-        // function changeImage(){
-        //         $("#image-holder").attr('src', "/images/hangman_1.png");
-        //     }
-        // }
-
-
         document.getElementById("letter").value = '';
 
         /* make sure guess button is enabled */
         guessButton = document.getElementById("guess");
-        // guessInput.style.display = 'inline';
-        // guessButton.style.display = 'inline';
 
         /* set up display of letters in current word */
         letters = document.getElementById("letters");
@@ -62,28 +54,19 @@ $(document).ready(function () {
             output.innerHTML = messages.lose;
             output.classList.add('error');
             var images = document.getElementsByTagName('img');
-var l = images.length;
-for (var i = 0; i < l; i++) {
-    images[0].parentNode.removeChild(images[0]);
-}
+            // var l = images.length;
+
+            for (var i = 0; i < 0; i++) {
+                images[0].parentNode.removeChild(images[0]);
+            }
         }
 
     }
 
-    // function changeImage6() {
-    //     if (lives === 6)
-    //     var img = document.createElement("IMG");
-    //     img.src = "images/hangman_6.jpg";
-    //     var oldImg = document.getElementById('oldImg');
-    //     document.getElementById('imgDiv').replaceChild(img, oldImg);
-    // }
+    // function switch(){
+    //     case (lives === 6) {
 
-    // function changeImage5() {
-    //     if (lives === 5)
-    //     var img = document.createElement("IMG");
-    //     img.src = "images/hangman_5.jpg";
-    //     var oldImg = document.getElementById('oldImg');
-    //     document.getElementById('imgDiv').replaceChild(img, oldImg);
+    //     }
     // }
 
     function changeImage() {
@@ -144,7 +127,7 @@ for (var i = 0; i < l; i++) {
         }
     }
 
-     function showAnswer(){
+    function showAnswer(){
         if (lives === 0){
         man.innerHTML = "The answer was " + currentWord.toUpperCase();
 
@@ -156,7 +139,6 @@ for (var i = 0; i < l; i++) {
 
     /* buttons */
     document.getElementById("restart").onclick = setup;
-
 
     /* reset letter to guess on click */
     guessInput.onclick = function () {
@@ -178,9 +160,7 @@ for (var i = 0; i < l; i++) {
                 if ((lettersMatched && lettersMatched.indexOf(guess) > -1) || (lettersGuessed && lettersGuessed.indexOf(guess) > -1)) {
                     output.innerHTML = '"' + guess.toUpperCase() + '"' + messages.already_guessed;
                     output.classList.add("warning");
-                //
                 }
-
                 /* does guess exist in current word? if so, add to letters already matched, if final letter added, game over with win message */
                 else if (currentWord.indexOf(guess) > -1) {
                     var lettersToShow;
@@ -215,9 +195,6 @@ for (var i = 0; i < l; i++) {
                     if (lives === 1) changeImage();
                     if (output.innerHTML = messages.lose) showAnswer();
                     if (lives === 0) gameOver();
-    // if (lives = 4){
-    //     $(#image-holder).attr('src', "hangman_1.png")
-    // }
 
                 }
             }
@@ -228,14 +205,6 @@ for (var i = 0; i < l; i++) {
             }
         }
 
-        // else {
-
-        //             if (lives === 4) {
-        //                 $("#image-holder").attr('src',"images/hangman_1.png")
-        //                 console.log("yes");
-        //             }
-        //         }
-        /* no letter entered, error */
         else {
             output.classList.add('error');
             output.innerHTML = messages.validLetter;
