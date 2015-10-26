@@ -3,7 +3,7 @@
 }
 body {
   /*background-color: #0E86E7;*/
-  color: #0053C3;
+  /*color: #0053C3;*/
   font-family: 'Allerta Stencil', sans-serif;
   float: center;
   margin: 10px;
@@ -17,14 +17,13 @@ body {
     background-color: #07070D;
     color: #07070D;
     font-family: 'Allerta Stencil', sans-serif;
-    font-size: 22px;
-    width: 50px;
-    height: 50px;
-    margin: 40px;
-    height: 50px;
+    font-size: 26px;
+    width: 75px;
+    height: 75px;
+    margin: 20px;
     padding: 50px;
-    border: solid 5px #737272;
-    padding: 10px;
+    border: solid 8px #F2F2F2;
+    padding: 15px;
     text-align: center;
 }
 
@@ -114,7 +113,7 @@ p {
 }
 
 #image-holder {
-  border: 7px solid #BDBFBF;
+  border: 7px solid #F2F2F2;
   height: 250px;
   width: 250px;
   background-color: #07070D;
@@ -138,7 +137,7 @@ h1 {
 h2 {
   /*background-color:#0E86E7;*/
   text-align: center;
-  color: #07070D;
+  color: #F2F2F2;
   font-family: 'Allerta Stencil', sans-serif;
   font-size: 40px;
   float: center;
@@ -148,7 +147,7 @@ h2 {
 
 .current-word {
     list-style: none;
-    color: #07070D;
+    color: #F2F2F2;
     font-family: 'Allerta Stencil', sans-serif;
     font-size: 40px;
     /*padding: 20px;*/
@@ -165,7 +164,7 @@ h2 {
 }
 
 .correct {
-  background-color:##0BEAFF;
+  background-color:#07070D;
   color: #F2F2F2;
   transition: all 1s ease;
 }
@@ -173,18 +172,18 @@ h2 {
 .error {
     color: red;
     opacity: 1;
-    font-size: 30px;
+    font-size: 40px;
 
 }
 
 .warning {
-    color: #07070D;
+    color: #F2F2F2;
     font-size: 30px;
     opacity: 1;
 }
 
 .win {
-    color: #ffffff;
+    color: #F2F2F2;
     opacity: 1;
     font-size: 60px;
 }

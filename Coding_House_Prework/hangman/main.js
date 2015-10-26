@@ -69,7 +69,6 @@ $(document).ready(function () {
         if (win) {
             output.innerHTML = messages.win;
             output.classList.add('win');
-            // audio.play("winning.mp3");
         } else {
             output.innerHTML = messages.lose;
             output.classList.add('error');
@@ -103,9 +102,9 @@ for (var i = 0; i < l; i++) {
         if (lives === 6) {
         var elem6 = document.createElement("img");
         elem6.setAttribute("src", "images/hangman_6.jpg");
-        var holder = document.getElementById("image-holder");
-        holder.removeChild('<img>');
-        holder.appendChild(elem6);
+        document.getElementById("image-holder").appendChild(elem6);
+        // holder.removeChild('<img>');
+        // holder.appendChild(elem6);
 
             console.log("yes6")
         }
