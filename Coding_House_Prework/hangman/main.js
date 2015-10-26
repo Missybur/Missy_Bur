@@ -126,13 +126,13 @@ $(document).ready(function () {
 
     }
 
-
      function showAnswer(){
         if (lives === 0){
-        man.innerHTML = "The answer was " + currentWord.toUpperCase();
-
+        man.innerHTML = "The answer was: " + currentWord.toUpperCase();
+        category.innerHTML = "GAME OVER!";
         }
     }
+
 
     /* Start game - should ideally check for existing functions attached to window.onload */
     window.onload = setup();
@@ -145,6 +145,15 @@ $(document).ready(function () {
     guessInput.onclick = function () {
         this.value = '';
     };
+
+    // Enter key acts as 'submit' key
+
+    $("#guess").keypress(function(e){
+        if (e.which == 13) {
+            e.preventDefault();
+            $("form").submit();
+        }
+    });
 
     /* main guess function when user clicks #guess */
     document.getElementById('hangman').onsubmit = function(e) {
