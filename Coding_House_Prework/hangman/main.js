@@ -3,7 +3,7 @@ $(document).ready(function () {
     var letterChoices, presidentsArray, guessInput, guess, guessButton, lettersGuessed, lettersMatched, output, man, letters, lives, currentWord, numLettersMatched, messages;
 
     function setup() {
-        /* start config options */
+        // start config options */
         letterChoices = "abcdefghijklmnopqrstuvwxyz";
         lives = 6;
         presidentsArray = ["lincoln", "kennedy", "washington", "roosevelt", "jefferson", "clinton", "nixon", "wilson", "johnson", "adams"];
@@ -17,12 +17,12 @@ $(document).ready(function () {
         lettersGuessed = lettersMatched = '';
         numLettersMatched = 0;
 
-        /* choose a word */
+        // choose a word */
         currentWord = presidentsArray[Math.floor(Math.random() * presidentsArray.length)];
 
         console.log(currentWord);
 
-        /* make #man and #output blank, create vars for later access */
+        // make #man and #output blank, create vars for later access */
         output = document.getElementById("output");
         man = document.getElementById("man");
         guessInput = document.getElementById("letter");
@@ -32,10 +32,10 @@ $(document).ready(function () {
 
         document.getElementById("letter").value = '';
 
-        /* make sure guess button is enabled */
+        // make sure guess button is enabled */
         guessButton = document.getElementById("guess");
 
-        /* set up display of letters in current word */
+        // set up display of letters in current word */
         letters = document.getElementById("letters");
         letters.innerHTML = '<li class="current-word">Current word:</li>';
         var i = letter;
@@ -134,10 +134,10 @@ $(document).ready(function () {
     }
 
 
-    /* Start game - should ideally check for existing functions attached to window.onload */
+    // Start game - should ideally check for existing functions attached to window.onload */
     window.onload = setup();
 
-    /* buttons */
+    // buttons */
 
     function restart() {
         location= location
@@ -147,7 +147,7 @@ $(document).ready(function () {
     document.getElementById("restart").onclick = restart;
     // console.log(location)
 
-    /* reset letter to guess on click */
+    // reset letter to guess on click */
     guessInput.onclick = function () {
         this.value = '';
     };
@@ -161,25 +161,25 @@ $(document).ready(function () {
         }
     });
 
-    /* main guess function when user clicks #guess */
+    // main guess function when user clicks #guess */
     document.getElementById('hangman').onsubmit = function(e) {
         if (e.preventDefault) e.preventDefault();
         output.innerHTML = '';
         output.classList.remove('error', 'warning');
         guess = guessInput.value;
 
-        /* does guess have a value? if yes continue, if no, error */
+        // does guess have a value? if yes continue, if no, error */
         if (guess) {
-            /* is guess a valid letter? if so carry on, else error */
+            // is guess a valid letter? if so carry on, else error */
             if (letterChoices.indexOf(guess) > -1) {
-                /* has it been guessed (missed or matched) already? if so, abandon & add notice */
+                // has it been guessed (missed or matched) already? if so, abandon & add notice */
                 if ((lettersMatched && lettersMatched.indexOf(guess) > -1) || (lettersGuessed && lettersGuessed.indexOf(guess) > -1)) {
                     output.innerHTML = '"' + guess.toUpperCase() + '"' + messages.already_guessed;
                     output.classList.add("warning");
                 //
                 }
 
-                /* does guess exist in current word? if so, add to letters already matched, if final letter added, game over with win message */
+                // does guess exist in current word? if so, add to letters already matched, if final letter added, game over with win message */
                 else if (currentWord.indexOf(guess) > -1) {
                     var lettersToShow;
                     lettersToShow = document.querySelectorAll(".letter" + guess.toUpperCase());
@@ -188,7 +188,7 @@ $(document).ready(function () {
                         lettersToShow[i].classList.add("correct");
                     }
 
-                    /* check to see if letter appears multiple times */
+                    // check to see if letter appears multiple times */
                     for (var j = 0; j < currentWord.length; j++) {
                         if (currentWord.charAt(j) === guess) {
                             numLettersMatched += 1;
@@ -200,7 +200,7 @@ $(document).ready(function () {
                         gameOver(true);
                     }
                 }
-                /* guess doesn't exist in current word and hasn't been guessed before, add to lettersGuessed, reduce lives & update user */
+                // guess doesn't exist in current word and hasn't been guessed before, add to lettersGuessed, reduce lives & update user */
                 else {
                     lettersGuessed += guess;
                     lives--;
@@ -216,14 +216,14 @@ $(document).ready(function () {
                     // if (lives === 0) gameOver();
                     }
                 }
-                /* not a valid letter, error */
+                // not a valid letter, error */
                 else {
                     output.classList.add('error');
                     output.innerHTML = messages.validLetter;
                 }
             }
 
-        /* no letter entered, error */
+        // no letter entered, error */
         else {
             output.classList.add('error');
             output.innerHTML = messages.validLetter;
