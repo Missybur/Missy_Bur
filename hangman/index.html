@@ -6,29 +6,33 @@
   <link href='https://fonts.googleapis.com/css?family=Allerta+Stencil|Ek+Mukta|Belgrano' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body background="https://s-media-cache-ak0.pinimg.com/236x/71/57/fc/7157fc57320ec270afd0dc717e1254ce.jpg">
 <h1>HANGMAN</h1>
 
-<h2>Type a letter into the box below and press the button "guess"</h2>
+<h3>Type a letter into the box below and press the button "guess"</h3>
 <div class="container">
-    <h2>The Category is U.S. Presidents</h2>
+    <h2 id="category" >The Category is U.S. Presidents</h2>
   </div>
+<div>
+  <h2 id="man"></h2>
+</div>
 <form style="text-align:center" id="hangman">
     <input class="input" type="text" maxlength="1" minlength="1" name="letter" id="letter" placeholder="Guess a letter" />
     <input id="guess" name="guess" type="submit" value="Guess" />
     <button id="restart" name="restart" type="button">Restart</button>
-</form>
-<p id="output" class="output"></p>
-<div class="container">
-  <ul id="letters"></ul>
-</div>
-<div>
-  <h2 id="man"></h2>
-</div>
-  <div class="conatiner">
+    <div class="conatiner">
     <div id="image-holder">
     </div>
   </div>
+</form>
+<p id="output" class="output"></p>
+<div class="container3">
+  <ul id="letters"></ul>
+</div>
+  <!-- <div class="conatiner">
+    <div id="image-holder">
+    </div>
+  </div> -->
  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="main.js"></script>
 
