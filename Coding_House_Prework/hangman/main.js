@@ -138,8 +138,14 @@ $(document).ready(function () {
     window.onload = setup();
 
     /* buttons */
-    document.getElementById("restart").onclick = setup;
 
+    function restart() {
+        location= location
+    }
+
+
+    document.getElementById("restart").onclick = restart;
+    // console.log(location)
 
     /* reset letter to guess on click */
     guessInput.onclick = function () {
