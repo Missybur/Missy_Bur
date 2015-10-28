@@ -132,6 +132,17 @@ p {
   border-radius: 100%;
 }
 
+.fa-quote-left:before {
+  float: left;
+  color: #E67E22;
+}
+
+.fa-quote-right:before {
+  color: #E67E22;
+}
+
+
+
 .plus-sign{
   font-size: 44px;
   position: fixed;
@@ -146,9 +157,10 @@ p {
   display: block;
   bottom: 40%;
   right: 1%;
-  /*top: 3.5%;*/
+}
 
-
+#first-dot {
+  color: #377e92;
 }
 
 .fa-plus-circle:before {
