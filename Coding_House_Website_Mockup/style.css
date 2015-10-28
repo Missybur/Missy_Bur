@@ -113,6 +113,57 @@ p {
 
 }
 
+
+.plus {
+  /*padding-bottom: 2px;*/
+  /*margin: 5px;*/
+  display: block;
+  bottom: 7px;
+  position: fixed;
+  /*bottom: 1.5%;*/
+  /*padding: 20px;*/
+  right: 2%;
+  z-index: 99999;
+  font-size: 44px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 100%;
+}
+
+.plus-sign{
+  font-size: 44px;
+  position: fixed;
+  display: block;
+  bottom: .5%;
+  right: 3.5%;
+  /*top: 1%;*/
+  /*left: 2%;*/
+
+
+
+  /*margin: 10px;*/
+  /*padding: 30px;*/
+  /*bottom: 7px;*/
+}
+
+.fa-plus-circle:before {
+  line-height: 18px;
+  font-weight: 400;
+  display: block;
+  position: fixed;
+  bottom: 1.5%;
+  right: 2%;
+  z-index: 99999;
+  font-size: 44px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 100%;
+}
+
 .bub span {
   position: relative;
 }
