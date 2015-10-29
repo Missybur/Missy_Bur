@@ -2,6 +2,7 @@ var students = [];
 var randomStudent = [];
 
 document.getElementById("add-random-student-button").addEventListener('click', generateRandomStudent)
+document.getElementById("random-team-box-button").addEventListener('click', randomPairTeamSelector)
 document.getElementById('addButton').addEventListener('click', addStudent)
 
 var studentNameInput = document.getElementById('studentName');
@@ -28,10 +29,9 @@ function addStudent(){
     });
     students = students.concat(names);
     studentNameInput.value = "";
-  addStudentsToList();
-  // generateRandomStudent(students);
-}
-document.getElementById("add-random-student-button").addEventListener('click', generateRandomStudent)
+    addStudentsToList();
+  }
+  document.getElementById("add-random-student-button").addEventListener('click', generateRandomStudent)
 }
 
 function addStudentsToList(){
@@ -53,38 +53,27 @@ function generateRandomStudent(event){
   var randIndex = Math.floor(Math.random() * students.length)
   var randStudentIndex = students[randIndex];
   console.log(randIndex, randStudentIndex)
-  // document.getElementById('add-random-student-button').addEventListener('click', generateRandomStudent)
-  // ("add-random-student-button").onclick=(
 
   document.getElementById("random-student-box").innerHTML = randStudentIndex;
   return randStudentIndex;
   generateRandomStudent();
 
-  }
+}
 
-
-  // function buttonClick(event, array){
-
-  // var randIndex = Math.floor(Math.random() * array.length);
-  // var randStudentIndex = array[randIndex];
-  // document.getElementById("random-student-box").innerHTML = randStudentIndex;
-  // // return randStudentIndex;
-  // buttonClick();
-
-  // }
-
-  function randomPairTeamSelector(students){
+function randomPairTeamSelector(event){
   console.log(students)
-  // var pair = students.slice(1,2);
-  var randIndex = Math.floor(Math.random() * students.length);
-  var randStudentIndexPair = students[randIndex] ;
+  var randIndex1 = Math.floor(Math.random() * students.length);
+  var randIndex2 = Math.floor(Math.random() * students.length);
+
+  var randStudentIndexPair1 = (students[randIndex1] + students[randIndex2]).split(" ").join("");
+  // var randStudentIndexPair2 = students[randIndex2];
   document.getElementById("random-team-box-button").addEventListener('click', randomPairTeamSelector)
 
-  document.getElementById("random-team-box").innerHTML = randStudentIndexPair;
-  return randStudentIndexPair;
+  document.getElementById("random-team-box").innerHTML = randStudentIndexPair1.split(" ").join("");
+  return randStudentIndexPair1.split(" ").join("");
   randomPairTeamSelector();
 
-  }
+}
 
   // var studentsTempArr = [Missy, Alicia, V, Paul, Joe, Austin, Sammy, Charles, Ethan, Rachel
 
