@@ -45,15 +45,14 @@ button{
   padding-top: 30px;
 }
 
-div {
-  border: 2px #fff;
-}
-
 #random-student-box, #random-team-box {
   background-color: #0BEAFF;
   width: 200px;
-  height: 75px;
+  height: 50px;
   border: 2px solid #fff;
   margin-top: 20px;
   color: #fff;
+  text-align: center;
+  padding-top: 30px;
+
 }
