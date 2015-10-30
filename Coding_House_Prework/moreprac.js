@@ -6,21 +6,35 @@
 //   })
 // }
 
-function sumEvens(numbers) {
+// function sumEvens(numbers) {
 
-    var evenArr = [];
+//     var evenArr = [];
 
-    numbers.forEach(function(val){
-        if (val % 2 !== 0 && val !== 0){
-            evenArr.push(val);
-        }
-    })
+//     numbers.forEach(function(val){
+//         if (val % 2 !== 0 && val !== 0){
+//             evenArr.push(val);
+//         }
+//     })
 
+// }
+// function titleCase(str){
+
+//         return str.replace(/([a-z]+)|([A-Z]+)/g, function(match, letter) {
+//             return letter ? match.toUpperCase() : match.toLowerCase();
+//         });
+//     }
+
+// console.log(swapCase("Life is 10% what happens to you, and 90% of how you REACT to it"));
+
+function titleCase(str){
+
+  return str.replace(/\w\S*/g, function(text){return text.charAt(0).toUpperCase() + text.substr(1).toLowerCase();});
 }
 
+console.log(titleCase("How can mirrors be real if our eyes aren't real"));
+console.log(titleCase("How can miRRors be real if our eYES aren't real"));
+
 // console.log(letterChanges("Aa1h2vjh Bb37hcj Cca976hjvh"));
-
-
 
 // var compressor = function(s) {
 
