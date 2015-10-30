@@ -1,12 +1,24 @@
-function letterChanges(str){
+// function letterChanges(str){
 
-  return str.replace(/[A-Z]/g, function(x){
-    return String.fromCharCode(x.charCodeAt(0)+1); }).replace(/[0-9]/g, function(y){
-      return y.toUpperCase();
-  })
+//   return str.replace(/[A-Z]/g, function(x){
+//     return String.fromCharCode(x.charCodeAt(0)+1); }).replace(/[0-9]/g, function(y){
+//       return y.toUpperCase();
+//   })
+// }
+
+function sumEvens(numbers) {
+
+    var evenArr = [];
+
+    numbers.forEach(function(val){
+        if (val % 2 !== 0 && val !== 0){
+            evenArr.push(val);
+        }
+    })
+
 }
 
-console.log(letterChanges("Aa1h2vjh Bb37hcj Cca976hjvh"));
+// console.log(letterChanges("Aa1h2vjh Bb37hcj Cca976hjvh"));
 
 
 
