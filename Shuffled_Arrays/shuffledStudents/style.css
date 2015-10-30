@@ -1,0 +1,58 @@
+body {
+  background-color: #0053C3;
+}
+
+h1 {
+  border: 2px solid #fff;
+  background-color: #0BEAFF;
+  color: #fff;
+  text-align: center;
+}
+
+h2, #student-name {
+  color: #fff;
+}
+
+h3 {
+  color: #fff;
+  float: right;
+  padding-right: 30%;
+}
+
+input {
+  border: 2px solid #fff;
+  background-color: #0BEAFF;
+  width: 200px;
+  color: #fff;
+  font: #fff;
+  float: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+button{
+  border: 2px solid #fff;
+  background-color: #0BEAFF;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 12px;
+}
+
+#bigList {
+  color: #0BEAFF;
+  float: right;
+  margin-right: 30px;
+  padding-top: 30px;
+}
+
+#random-student-box, #random-team-box {
+  background-color: #0BEAFF;
+  width: 200px;
+  height: 50px;
+  border: 2px solid #fff;
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+  padding-top: 30px;
+
+}
