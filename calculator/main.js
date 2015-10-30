@@ -64,5 +64,4 @@ $(document).ready(function(){
  number = "";
  newnumber = "";
 });
-    //Add your last .click() here!
   });
