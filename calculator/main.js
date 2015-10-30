@@ -46,23 +46,23 @@ $(document).ready(function(){
    }
    else if(operator === "%") {
     result = newnumber / 100;
-   }
+  }
 
-   else if(operator === "-") {
-     result = newnumber - number;
-   }
-   else if(operator === "x") {
-     result = newnumber * number;
-   }
-   else if(operator === "/") {
-     result = newnumber / number;
-   }
+  else if(operator === "-") {
+   result = newnumber - number;
+ }
+ else if(operator === "x") {
+   result = newnumber * number;
+ }
+ else if(operator === "/") {
+   result = newnumber / number;
+ }
 
-   result = result.toString(10);
-   totaldiv.text(result);
-   testNumLength(result);
-   number = "";
-   newnumber = "";
- });
+ result = result.toString(10);
+ totaldiv.text(result);
+ testNumLength(result);
+ number = "";
+ newnumber = "";
+});
     //Add your last .click() here!
   });
