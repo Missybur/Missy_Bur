@@ -2,7 +2,8 @@
 var randomStudent = [];
 var teamsArr = [];
 var team = [];
-var students = ["m", "y", "n", "b"]
+
+
 
 document.getElementById("add-random-student-button").addEventListener('click', generateRandomStudent)
 document.getElementById("random-team-box-button").addEventListener('click', randomPairTeamSelector)
@@ -18,7 +19,7 @@ function keyPressed(event){
     addStudent();
   }
 }
-
+∏
 function addStudent(){
   var inputStr = studentNameInput.value;
   if(inputStr){
@@ -62,26 +63,26 @@ function generateRandomStudent(event){
   generateRandomStudent();
 }
 
-function chunk(array, size){
-  size = size || 2;
+// function chunk(array, size){
+//   size = size || 2;
 
-  array = array.concat();
-  var teams = [];
+//   array = array.concat();
+//   var teams = [];
 
-  while(students.length){
-    var team = [];
+//   while(students.length){
+//     var team = [];
 
-    for (var i = 0; i < size && array.length; i++){
-      team.push(array.shift());
-    }
-    teams.push(students);
-  }
+//     for (var i = 0; i < size && array.length; i++){
+//       team.push(array.shift());
+//     }
+//     teams.push(students);
+//   }
 
-  return teams;
-}
+//   return teams;
+// }
 
-console.log(teams = (chunk(students), 2));
-console.log(chunk(students), 2);
+// console.log(teams = (chunk(students), 2));
+// console.log(chunk(students), 2);
 
 
 
@@ -91,7 +92,7 @@ function randomPairTeamSelector(event){
   var randIndex1 = Math.floor(Math.random() * students.length);
   var randIndex2 = Math.floor(Math.random() * students.length);
 
-  var randStudentIndexPair1 = students[randIndex1] + students[randIndex2]
+  var randStudentIndexPair1 = students[randIndex1] + "&" + students[randIndex2]
   var randStudentIndexPair2 = students[randIndex2];
   document.getElementById("random-team-box-button").addEventListener('click', randomPairTeamSelector)
 
