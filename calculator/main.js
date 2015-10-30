@@ -24,6 +24,12 @@ $(document).ready(function(){
     number = "";
     totaldiv.text("0");
   });
+
+  $("#plusMinus").click(function(){
+    number += $(this).text();
+    // number = newnumber * -1;
+  })
+
   $("#clear,#clearall").click(function(){
     number = "";
     totaldiv.text("0");
@@ -38,10 +44,8 @@ $(document).ready(function(){
     if(operator === "+") {
      result = newnumber + number;
    }
-   else if(operator === "+/"){
-
-    if
-     result =
+   else if(operator === "%") {
+    result = newnumber / 100;
    }
 
    else if(operator === "-") {
