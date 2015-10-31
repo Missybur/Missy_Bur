@@ -1,18 +1,163 @@
 .container {
   border-radius: 20px;
-  border: 1px solid #000;
+  border: 1px solid #00F;
   margin: 10px;
   min-height: 50px;
+}
+
+.containerTower1 {
+  /*margin-top-top: 20px;*/
+  /*border-radius: 10px;*/
+}
+
+.containerTower2 {
+  margin-top-top: 20px;
+  border-radius: 10px;
 }
 
 #favorites {
   border: 3px solid red;
 }
 
+#despised {
+  border: 3px solid green;
+}
+
+.tHContainer1 {
+  /*bottom: 0;*/
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+}
+
+.tHContainer2 {
+  bottom: 0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+}
+
+.box.selected {
+  border: 5px solid #0F0;
+}
+
 .box {
+  padding-bottom: 20px;
   height: 50px;
   width: 50px;
-  border: 1px solid #000;
+  border: 1px solid #F00;
   display: inline-block;
-  margin: 10px;
+  margin: 20px;
 }
+
+#box-1 {
+  background-color: #FF2F7C;
+  height: 55px;
+  width: 85px;
+  margin-left: 31%;
+  border-radius: 10px;
+}
+
+#box-2 {
+  background-color: #BEF600;
+  height: 60px;
+  width: 150px;
+  margin-left: 20%;
+  border-radius: 10px;
+
+}
+
+#box-3 {
+  background-color: #9639AD;
+  height: 70px;
+  width: 250px;
+  margin-left: 0%;
+  border-radius: 10px;
+
+}
+
+/*#box-1 {
+  background-color: #FF2F7C;
+  height: 55px;
+  width: 85px;
+  margin-left: 31%;
+}
+
+#box-2 {
+  background-color: #BEF600;
+  height: 60px;
+  width: 150px;
+  margin-left: 20%;
+}
+
+#box-3 {
+  background-color: #9639AD;
+  height: 70px;
+  width: 250px;
+  margin-left: 0%;
+}
+
+#box-1 {
+  background-color: #FF2F7C;
+  height: 55px;
+  width: 85px;
+  margin-left: 31%;
+}
+
+#box-2 {
+  background-color: #BEF600;
+  height: 60px;
+  width: 150px;
+  margin-left: 20%;
+}
+
+#box-3 {
+  background-color: #9639AD;
+  height: 70px;
+  width: 250px;
+  margin-left: 0%;
+}*/
+
+#pole-left {
+  background-color: #FFDE12;
+  height: 600px;
+  width: 40px;
+  margin-left: 9%;
+  float: left;
+  border: 3px solid #00ADBC;
+  border-radius: 10px;
+  margin-top: 200px;
+  position: fixed;
+  z-index: -1;
+}
+
+#pole-middle {
+  background-color: #FFDE12;
+  height: 600px;
+  width: 40px;
+  margin-left: 40%;
+  float: left;
+  border: 3px solid #00ADBC;
+  border-radius: 10px;
+  margin-top: 200px;
+  position: fixed;
+  z-index: -1;
+}
+
+#pole-right {
+  background-color: #FFDE12;
+  height: 600px;
+  width: 40px;
+  margin-left: 70%;
+  float: left;
+  border: 3px solid #00ADBC;
+  border-radius: 10px;
+  margin-top: 200px;
+  position: fixed;
+  z-index: -1;
+}
+
+
+
+
+
