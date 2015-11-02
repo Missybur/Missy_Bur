@@ -1,0 +1,107 @@
+body {
+  text-align: center;
+  background-color: #B8B89F;
+  color: #FF3B77;
+
+  /*color: #B8B89F;*/
+}
+
+#table {
+  padding: 20px;
+  margin-right: 250px;
+  margin-left: 150px;
+  text-align: left;
+}
+
+th {
+  text-align: center;
+}
+
+tr, th, td {
+  border: 3px solid #FF3B77;
+
+}
+
+caption {
+  color: #FF3B77;
+  font-size: 30px;
+}
+
+.container {
+  /*background-color: #B8B89F;*/
+}
+
+.div {
+padding: 10px}
+
+#list-header {
+  margin: 20px;
+  float: left;
+}
+
+.col-s-12 {
+  border: 2px solid #FF3B77;
+
+}
+
+.col-xs-4 {
+  border: 3px solid #FF3B77;
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  /*margin: 20px;*/
+}
+
+#description-row div {
+  /*margin-left: 5px;*/
+}
+
+label {
+  float: left;
+  text-align: center;
+  font: 14px;
+}
+
+input {
+  background-color: #CDFF00;
+  border: 2px solid #FF3B77;
+  /*color: #52656B;*/
+  margin: 10px;
+  display: #FF3B77;
+}
+
+h1 {
+  color: #CDFF00;
+}
+
+h4 {
+  color: #52656B;
+}
+
+.button {
+  text-align: center;
+  background-color: #CDFF00;
+  font: 9px;
+  border: 3px solid #FF3B77;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+#checkbox {
+  /*padding-top: 30px;*/
+  background-color: #CDFF00;
+  border: 3px solid #FF3B77;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  /*margin-top: 10px;*/
+  margin-right: 30px;
+  float: left;
+  color: #FF3B77;
+}
+
+#user-input {
+  /*margin: 10px 10px;*/
+}
+
+
