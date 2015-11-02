@@ -1,0 +1,50 @@
+.tower {
+  height: 600px;
+  width: 400px;
+  background-color: #FFDE12;
+  border: 3px solid #9639AD;
+}
+
+.disk {
+  height: 50px;
+  /*background-color: #9639AD;*/
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 7px;
+  /*border: 3px solid #BEF600;*/
+}
+
+.disk.clicked {
+  border: 4px dashed white;
+}
+
+#p1 {
+  background-image: url("images/snow_1.jpg");
+  width: 166px;
+  height: 140px;
+  /*background-color: #FF2F7C;*/
+  /*border-color: #9639AD;*/
+  /*margin-top: 445px;*/
+}
+
+#p2{
+  height: 145px;
+  width: 189px;
+  background-image: url("images/snow_2.png");
+  background-color: #BEF600;
+  /*border-color: #9639AD;*/
+  /*margin-top: 445px;*/
+
+
+}
+
+#p3{
+  width: 378px;
+  height: 384px;
+  background-image: url("images/snow_3.png");
+  background-color: #00ADBC;
+  /*border-color: #9639AD;*/
+  /*margin-top: 445px;*/
+
+
+}

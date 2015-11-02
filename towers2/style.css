@@ -1,0 +1,30 @@
+.tower {
+  height: 600px;
+  background-color: grey;
+  border: 3px solid black;
+}
+
+.disk {
+  height: 50px;
+  background-color: purple;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 7px;
+  border: 3px solid black;
+}
+
+.disk.clicked {
+  border: 4px solid green;
+}
+
+#p1 {
+  width: 50px;
+}
+
+#p2{
+  width: 100px;
+}
+
+#p3{
+  width: 150px;
+}

@@ -1,29 +1,34 @@
-function compressor(str) {
- var emptyStr = "";
- var numRepeats = 1;
- for ( i=0; i< str.length; i++) {
-   if (i===0) {
-     emptyStr += str[i];
-   } else {
-     if (str[i]===str[i-1]) {
-       numRepeats ++;
-     } else if (str[i] !== str[i-1]) {
-       if (numRepeats !== 1) {
-           emptyStr += numRepeats;
-       }
-       emptyStr += str[i];
-       numRepeats = 1;
-     }
-   }
-   if (i+1===str.length)
-   {
-     if (numRepeats !== 1) {
-         emptyStr += numRepeats;
-     }
-   }
- }
- return (emptyStr);
+function isOddNumber(nums){
+  return "13579".indexOf(nums) > -1;
 }
 
-console.log(compressor("aaaaabbbbbbbbbccccpqrstuv"))
+function isEvenNum(nums){
+  // if (nums % 2 === 0) {
+  //   return nums
+  // }
+  return "2468".indexOf(nums) > -1;
+}
+
+// console.log(isOddNumber(56647302));
+
+function weirdNumSplitter(num){
+  var str = num.toString();
+  var answer = "";
+
+  for (var i = 0; i < str.length-1; i++){
+    answer += str[i];
+    if(isOddNumber(str[i]) && isOddNumber(str[i +1])) {
+      answer += "-"
+    } if (isEvenNum(str[i]) && isEvenNum(str[i +1])) {
+      answer += "*"
+    }
+  }
+
+  answer += str[str.length-1];
+  return answer
+}
+
+
+console.log(weirdNumSplitter(56647302));
+console.log(weirdNumSplitter(97946));
 
