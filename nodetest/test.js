@@ -3,15 +3,17 @@
 var http = require('http');
 var PORT = 3000;
 var math = require("./math");
+var server = http.createServer(handleRequest);
+
+
 
 function handleRequest(request, response){
   var params = request.url.split('/');
   console.log(params);
   switch(params[1]){
     case "math":
-    mathOperators(params);
+    mathOperators(params, response);
     console.log("math operators")
-    // res.end();
     break;
     case "letters":
     letterFunctions(params);
@@ -23,35 +25,55 @@ function handleRequest(request, response){
     break;
 
   }
-  response.write("It works! Path hit: " + request.url);
-  response.end();
+
+response.end();
 
 }
 
-function mathOperators(request, response){
-  var params = request.url.split('/');
+function mathOperators(params, res){
+
   console.log("Math function is working")
-  switch(params[2]){
-    case "square":
-    // var num = params[3];
-    // var numSquared = num * num;
-    res.write(num + " squared is: " + numSquared );
-    res.end();
-    break;
-    case:
+
+  if (params[2] == "square") {
+    var num = params[3]
+    console.log(params[3])
+    console.log(num)
+    var squared = num * num
+    res.write("number squared is: " + squared.toString());
   }
 
+  if (params[2] == "sum"){
+    var sum = parseInt(params[3]) + parseInt(params[4]) + parseInt(params[5])
+    res.write("number sum: " + sum )
+  }
+
+  if (params[2] == "cube"){
+    var cubed = parseInt(params[3]) * parseInt(params[3]);
+    res.write("number cubed is: " + cubed)
+  }
+
+
+
 }
 
-function letterFunctions(){
-  console.log("letter functions are working!")
-}
+  // switch(params[2]){
+  //   case "square":
+  //   var num = params[3];
+  //   var numSquared = num * num;
+  //   break;
+  //   case:
+  // }
 
-function gravitarFunctions(){
-  console.log("gravitar function is working")
-}
+// function letterFunctions(){
+//   console.log("letter functions are working!")
+// }
 
-var server = http.createServer(handleRequest);
+// function gravitarFunctions(){
+//   console.log("gravitar function is working")
+// }
+
+
+
 
 server.listen(PORT, function(){
   console.log("Server is listening on: http://localhost:%s", PORT);
