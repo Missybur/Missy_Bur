@@ -1,5 +1,10 @@
+        .lettersContainer {
+          margin-left: 150px;
+        }
+
         body {
           background: #FBAC18;
+          border: 3px solid #ED4599;
           font: #FED864;
           height: 100%;
           width: 100%;
@@ -20,12 +25,14 @@
         }
 
         #chores_list {
+          color: #ED4599;
           display: inline-block;
           text-align: center;
           width: 100%;
-          height: 250px%;
+          height: 25px;
+          padding-top: 2px;
           float: right;
-          border: 3px solid #FF3B77;
+          border: 2px solid #ED4599;
           font-size: 20px;
         }
 
@@ -37,13 +44,10 @@
         }
 
         .floating-grid {
-          /*float: left;*/
-          /*display: block;*/
           margin-left: auto;
           margin-right: auto;
           margin: 10px;
           text-align: center;
-          /*border: 7px solid #FF3B77;*/
         }
 
         .floating-box {
@@ -64,6 +68,7 @@
 
         #todo_checkbox_get_dressed {
           color: #FBAC18;
+          border: 3px solid #ED4599;
           font: 20px #FED864;
         }
 
@@ -74,6 +79,7 @@
 
         #todo_checkbox_read {
           color: #FBAC18;
+          border: 3px solid #ED4599;
           font: 20px #FED864;
         }
 
@@ -84,6 +90,7 @@
 
         #todo_checkbox_say_prayers {
           color: #FBAC18;
+          border: 3px solid #ED4599;
           font: 20px #FED864;
         }
 
@@ -94,6 +101,7 @@
         }
 
         h1 {
+          /*border: 3px solid #ED4599;*/
           font: #FED864;
           font-size: 30px;
           background-color: #fff;
@@ -103,6 +111,7 @@
           background-color: #fff;
           font-size: 25px;
           width: 100%;
+          border: 3px solid #ED4599;
           font: #FED864;
           border: #99001A solid 23px;
         }
@@ -139,32 +148,28 @@
           width: 45px;
           height: 40px;
           background-color: #FF3B77;
+          border: 3px solid #ED4599;
           color: #FED864;
           cursor: pointer;
           border-radius: 5px;
           border: solid 3px #ED4599;
           font-family: 'Sigmar One', cursive;
-
         }
 
         #clear {
+          margin-right: 150px;
           width: 100px;
           height: 50px;
           background-color: #ED4599;
+          border: 3px solid #ED4599;
           border: #FED864 3px solid;
           color: #FFF;
         }
 
         #alphabet li:hover {
           background: #fff;
-          border: dashed 1px #99001A; ;
+          border: solid 2px #99001A; ;
           color: #FF3B77;
-          width: 90px;
-          height: 90px;
-          font-size: 50px;
-         /* width: 60px;
-          height: 60px;*/
-          /*font-size: 30px;*/
         }
 
         #my-word {
@@ -179,11 +184,6 @@
           filter: alpha(opacity=40);
         }
 
-  /*      #mylives {
-          font-size: 1.6em;
-          text-align: center;
-          display: block;
-        }*/
 
         #answer_box {
           float: center;
@@ -199,42 +199,7 @@
           font-size: 20px;
           text-align: center;
         }
-/*
-        .click_here_container {
-          float: center;
-          margin: 0 0 0 0px;
-          color: #FF3B77;
-          height: 50px;
-          width: 50px;
-          padding: 10px;
-        }*/
-
-        /* .click_here {
-          display: inline-block;
-          margin: 0 10px 10px 0;
-          padding-bottom: 10px;
-          list-style: none;
-         /* width: 300px;
-          height: 300px;*/
-/*          background-color: #FF3B77;
-          color: #FED864;
-          cursor: pointer;
-          border-radius: 5px;
-          border: solid 3px #ED4599;
-          font: Sunshiney;
-          list-style-type: none;
-        }
-*/*/
-    /*    .click_here_1_container{
-          height: 150px;
-          width: 150px;
-          background-color: #FF3B77;
-          font-size: 15px;
-          font-family: Sunshiney;
-           margin-left: auto;
-          margin-right: auto;
-          padding: 10px;
-        }*/
+*/
 
         .floating-box-click-here{
           display: inline-block;
@@ -245,8 +210,8 @@
           margin: 20px;
           text-align: middle;
           padding-top: 50px;
+          border: 3px solid #ED4599;
           font-color: #FED864;
-
         }
 
         #click_me {
@@ -258,23 +223,17 @@
           margin: 20px;
           text-align: middle;
           padding-top: 15px;
+          border: 3px solid #ED4599;
           color: #FED864;
         }
 
-
         .directions li {
-            color: #FED864;
-            font-size: 15px;
-            background-color: #fff;
-            list-style-type: none;
+          border: 3px solid #ED4599;
+          color: #FED864;
+          font-size: 15px;
+          background-color: #fff;
+          list-style-type: none;
         }
-/*
-        .container {
-          width: 1000px;
-          height: 100px;
-          padding-top: 20px;
-          padding-bottom: 20px;                                                ;
-        }*/
 
         #hold {
           width: 110px;
