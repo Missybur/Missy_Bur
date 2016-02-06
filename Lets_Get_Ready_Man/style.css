@@ -1,10 +1,16 @@
+        .lettersContainer {
+          margin-left: 150px;
+        }
+
         body {
           background: #FBAC18;
+          border: 3px solid #ED4599;
           font: #FED864;
           height: 100%;
           width: 100%;
           text-align: center;
           font-size: 25px;
+          font: Sigmar+One;
           font-family: 'Sigmar One', cursive;
         }
 
@@ -19,53 +25,29 @@
         }
 
         #chores_list {
+          color: #ED4599;
           display: inline-block;
           text-align: center;
           width: 100%;
-          height: 250px%;
+          height: 25px;
+          padding-top: 2px;
           float: right;
-          border: 3px solid #FF3B77;
+          border: 2px solid #ED4599;
           font-size: 20px;
         }
 
         .chores_images {
-          margin: 10px;
+          margin: 20px;
           width: 150px;
           height: 150px;
           border: 4px solid #FF3B77;
         }
 
-        #get_dressed_image{
-        }
-
-        #clean_up_toys_image {
-
-        }
-
-        #brush_teeth_image {
-
-        }
-
-        #say_prayers_image {
-
-        }
-
-        #put_clothes_in_hamper_image {
-
-        }
-
-        #read_image{
-
-        }
-
         .floating-grid {
-          /*float: left;*/
-          /*display: block;*/
           margin-left: auto;
           margin-right: auto;
           margin: 10px;
           text-align: center;
-          /*border: 7px solid #FF3B77;*/
         }
 
         .floating-box {
@@ -74,7 +56,7 @@
           width: 150px;
           height: 150px;
           background-color: #fff;
-          margin: 10px;
+          margin: 20px;
           text-align: middle;
           padding-top: 50px;
         }
@@ -86,6 +68,7 @@
 
         #todo_checkbox_get_dressed {
           color: #FBAC18;
+          border: 3px solid #ED4599;
           font: 20px #FED864;
         }
 
@@ -96,6 +79,7 @@
 
         #todo_checkbox_read {
           color: #FBAC18;
+          border: 3px solid #ED4599;
           font: 20px #FED864;
         }
 
@@ -106,15 +90,18 @@
 
         #todo_checkbox_say_prayers {
           color: #FBAC18;
+          border: 3px solid #ED4599;
           font: 20px #FED864;
         }
 
         p {
           color: #FBAC18;
           background-color: #fff;
+          padding: 10px;
         }
 
         h1 {
+          /*border: 3px solid #ED4599;*/
           font: #FED864;
           font-size: 30px;
           background-color: #fff;
@@ -124,6 +111,7 @@
           background-color: #fff;
           font-size: 25px;
           width: 100%;
+          border: 3px solid #ED4599;
           font: #FED864;
           border: #99001A solid 23px;
         }
@@ -160,22 +148,29 @@
           width: 45px;
           height: 40px;
           background-color: #FF3B77;
+          border: 3px solid #ED4599;
           color: #FED864;
           cursor: pointer;
           border-radius: 5px;
           border: solid 3px #ED4599;
-          font: Sunshiney;
-
+          font-family: 'Sigmar One', cursive;
         }
 
-      /*  #alphabet li:hover {
+        #clear {
+          margin-right: 150px;
+          width: 100px;
+          height: 50px;
+          background-color: #ED4599;
+          border: 3px solid #ED4599;
+          border: #FED864 3px solid;
+          color: #FFF;
+        }
+
+        #alphabet li:hover {
           background: #fff;
-          border: dashed 1px #99001A; ;
+          border: solid 2px #99001A; ;
           color: #FF3B77;
-         /* width: 60px;
-          height: 60px;*/
-          /*font-size: 30px;*/
-        }*/
+        }
 
         #my-word {
           margin: 0;
@@ -189,11 +184,6 @@
           filter: alpha(opacity=40);
         }
 
-        #mylives {
-          font-size: 1.6em;
-          text-align: center;
-          display: block;
-        }
 
         #answer_box {
           float: center;
@@ -202,91 +192,47 @@
           color: #FF3B77;
         }
 
-        #small_answer_box_1 {
+        #small_answer_box_1, #small_answer_box_2, #small_answer_box_3, #small_answer_box_4, #small_answer_box_5, #small_answer_box_6 {
           width: 110px;
           height: 40px;
-          border: solid 2px #FBAC18;
+          border: solid 3px #FBAC18;
           font-size: 20px;
           text-align: center;
         }
+*/
 
-        #small_answer_box_2 {
-          width: 110px;
-          height: 40px;
-          border: solid 2px #ED4599;
-          font-size: 20px;
-          text-align: center;
-
+        .floating-box-click-here{
+          display: inline-block;
+          border: 4px solid #FF3B77;
+          width: 150px;
+          height: 150px;
+          background-color: #fff;
+          margin: 20px;
+          text-align: middle;
+          padding-top: 50px;
+          border: 3px solid #ED4599;
+          font-color: #FED864;
         }
 
-        #small_answer_box_3{
-          width: 110px;
-          height: 40px;
-          border: solid 2px #FBAC18;
-          font-size: 10px;
-          text-align: center;
-        }
-
-          #small_answer_box_4 {
-          width: 110px;
-          height: 40px;
-          border: solid 2px #ED4599;
-          font-size: 20px;
-          text-align: center;
-
-        }
-
-        #small_answer_box_5{
-          width: 110px;
-          height: 40px;
-          border: solid 2px #FBAC18;
-          font-size: 20px;
-          text-align: center;
-
-        }
-
-        #small_answer_box_6 {
-          width: 110px;
-          height: 40px;
-          border: solid 2px #ED4599;
-          font-size: 20px;
-          text-align: center;
-
-        }
-
-        .click_here_container {
-          /*float: right;*/
-          margin: 0 0 0 0px;
-          color: #FF3B77;
-        }
-
-         .click_here {
-          float: right;
-          margin: 0 10px 10px 0;
-          list-style: none;
-          width: 100px;
-          height: 100px;
-          background-color: #FF3B77;
+        #click_me {
+          display: inline-block;
+          border: 4px solid #FFF;
+          width: 150px;
+          height: 150px;
+          background-color: #ED4599;
+          margin: 20px;
+          text-align: middle;
+          padding-top: 15px;
+          border: 3px solid #ED4599;
           color: #FED864;
-          cursor: pointer;
-          border-radius: 5px;
-          border: solid 3px #ED4599;
-          font: Sunshiney;
-          list-style-type: none;
-
-}
+        }
 
         .directions li {
-            color: #FED864;
-            font-size: 15px;
-            background-color: #fff;
-            list-style-type: none;
-        }
-
-        .container {
-          width: 1000px;
-          height: 100px;
-          padding-top: 20px;                                                 ;
+          border: 3px solid #ED4599;
+          color: #FED864;
+          font-size: 15px;
+          background-color: #fff;
+          list-style-type: none;
         }
 
         #hold {
@@ -295,3 +241,4 @@
           border: solid 2px #ED4599;
           font-size: 20px;
         }
+
